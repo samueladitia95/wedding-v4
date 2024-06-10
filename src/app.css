@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "Arizona";
+		src: local("Arizona"), url("/fonts/Arizona/Arizona-Regular.ttf");
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Jakarta";
+		src: local("Jakarta"), url("/fonts/Jakarta/PlusJakartaText-Light.otf");
+		font-weight: 300;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Jakarta";
+		src: local("Jakarta"), url("/fonts/Jakarta/PlusJakartaText-LightItalic.otf");
+		font-weight: 300;
+		font-display: swap;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: "Jakarta";
+		src: local("Jakarta"), url("/fonts/Jakarta/PlusJakartaText-Regular.otf");
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Jakarta";
+		src: local("Jakarta"), url("/fonts/Jakarta/PlusJakartaText-Italic.otf");
+		font-weight: 400;
+		font-display: swap;
+		font-style: italic;
+	}
+	@font-face {
+		font-family: "Jakarta";
+		src: local("Jakarta"), url("/fonts/Jakarta/PlusJakartaText-Bold.otf");
+		font-weight: 700;
+		font-display: swap;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-Thin.otf");
+		font-weight: 100;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-ExraLight.otf");
+		font-weight: 200;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-Light.otf");
+		font-weight: 300;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-Regular.otf");
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-Medium.otf");
+		font-weight: 500;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-SemiBold.otf");
+		font-weight: 600;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-Bold.otf");
+		font-weight: 700;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-ExtraBold.otf");
+		font-weight: 800;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "Safira";
+		src: local("Safira"), url("/fonts/Safira/SafiraMarch-Black.otf");
+		font-weight: 900;
+		font-display: swap;
+		font-style: normal;
+	}
+}
