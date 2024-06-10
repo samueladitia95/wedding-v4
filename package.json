@@ -37,6 +37,7 @@
 		"node": "20.x"
 	},
 	"dependencies": {
+		"clsx": "^2.1.1",
 		"pocketbase": "^0.21.3"
 	}
 }
