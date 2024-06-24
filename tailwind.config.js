@@ -14,6 +14,10 @@ export default {
 			fontSize: {
 				"4.5xl": "40px",
 			},
+			colors: {
+				"text-primary": "#202020",
+				"bg-primary": "#1A1A1A",
+			},
 		},
 		container: {
 			center: true,

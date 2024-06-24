@@ -1,10 +1,22 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import dayjs from "dayjs";
+	import { register } from "swiper/element/bundle";
 	import type { LayoutData } from "./$types";
-	import Starter from "$lib/containers/Starter.svelte";
 	import { pb } from "$lib/pocketbase";
 
+	import Starter from "$lib/containers/Starter.svelte";
+	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
+
+	register();
+
 	export let data: LayoutData;
+
+	let galleryImages = data.response.gallery_images
+		? data.response.gallery_images.map((el: string) => {
+				return pb.files.getUrl(data.response, el);
+			})
+		: [];
 
 	onMount(() => {
 		document.body.classList.add("no-scrollbar");
@@ -16,4 +28,5 @@
 		bgMain={pb.files.getUrl(data.response, data.response.starter_main)}
 		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
 	/>
+	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {galleryImages} />
 </div>

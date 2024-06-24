@@ -38,6 +38,9 @@
 	},
 	"dependencies": {
 		"clsx": "^2.1.1",
-		"pocketbase": "^0.21.3"
+		"dayjs": "^1.11.11",
+		"pocketbase": "^0.21.3",
+		"svelte-inview": "^4.0.2",
+		"swiper": "^11.1.4"
 	}
 }
