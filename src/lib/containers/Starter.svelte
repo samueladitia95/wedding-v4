@@ -9,7 +9,7 @@
 	<div class="bg-cover" style="background-image: url({bgMain});">
 		<div class="bg-black bg-opacity-20 w-full">
 			<div class="container text-white h-screen">
-				<div class="text-center pt-28 pb-10 flex flex-col gap-10 h-full">
+				<div class="text-center pt-28 md:pt-40 pb-10 flex flex-col gap-10 h-full">
 					<div class="flex flex-col gap-7">
 						<div class="font-jakarta text-xs font-light uppercase">TOGETHER WITH OUR PARENTS</div>
 						<div class="font-arizona text-sm flex flex-col gap-6">
@@ -18,13 +18,15 @@
 						</div>
 					</div>
 
-					<div class="font-safira text-4.5xl font-light flex flex-col gap-4 px-10">
+					<div
+						class="font-safira text-4.5xl/relaxed md:text-5xl/relaxed font-light flex flex-col gap-4 px-10 md:px-40"
+					>
 						<div>REYNALDO SAPUTRA</div>
-						<div class="text-5xl">&</div>
+						<div class="text-5xl md:text-6xl">&</div>
 						<div>CYNTHIA LIE</div>
 					</div>
 
-					<div class="font-arizona font-light px-10">
+					<div class="font-arizona font-light px-10 md:px-56 md:leading-relaxed">
 						Cordially invite you to the wedding of their children
 					</div>
 
@@ -38,12 +40,12 @@
 
 	<!-- Secondary Screen -->
 	<!-- Secondary bg image -->
-	<div class="h-screen bg-cover bg-center" style="background-image: url({bgSecondary});">
-		<div class="container text-white text-center pt-24 flex flex-col gap-6">
-			<div class="font-safira leading-relaxed font-light px-16">
+	<div class="h-screen bg-cover bg-center md:bg-top" style="background-image: url({bgSecondary});">
+		<div class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6">
+			<div class="font-safira leading-relaxed md:text-2xl/relaxed font-light px-16 md:px-48">
 				I HAVE FOUND THE ONE WHOM MY SOUL LOVES
 			</div>
-			<div class="font-rome italic text-xs">Song of Solomon 3:4</div>
+			<div class="font-rome italic text-xs md:text-base">Song of Solomon 3:4</div>
 		</div>
 	</div>
 </div>
