@@ -38,10 +38,12 @@
 
 	<!-- Secondary Screen -->
 	<!-- Secondary bg image -->
-	<div class="min-h-screen bg-cover bg-center" style="background-image: url({bgSecondary});">
-		<div class="container text-white">
-			<div>I HAVE FOUND THE ONE WHOM MY SOUL LOVES</div>
-			<div>Song of Solomon 3:4</div>
+	<div class="h-screen bg-cover bg-center" style="background-image: url({bgSecondary});">
+		<div class="container text-white text-center pt-24 flex flex-col gap-6">
+			<div class="font-safira leading-relaxed font-light px-16">
+				I HAVE FOUND THE ONE WHOM MY SOUL LOVES
+			</div>
+			<div class="font-rome italic text-xs">Song of Solomon 3:4</div>
 		</div>
 	</div>
 </div>

@@ -9,6 +9,7 @@ export default {
 				arizona: ["Arizona", ...defaultTheme.fontFamily.sans],
 				jakarta: ["Jakarta", ...defaultTheme.fontFamily.sans],
 				safira: ["Safira", ...defaultTheme.fontFamily.sans],
+				rome: ["Times New Roman", ...defaultTheme.fontFamily.serif],
 			},
 			fontSize: {
 				"4.5xl": "40px",
