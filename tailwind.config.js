@@ -17,6 +17,7 @@ export default {
 			colors: {
 				"text-primary": "#202020",
 				"bg-primary": "#1A1A1A",
+				"bg-attire": "#121212",
 			},
 		},
 		container: {

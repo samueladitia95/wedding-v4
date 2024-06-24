@@ -7,6 +7,7 @@
 
 	import Starter from "$lib/containers/Starter.svelte";
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
+	import TheAttire from "$lib/containers/TheAttire.svelte";
 
 	register();
 
@@ -29,4 +30,5 @@
 		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {galleryImages} />
+	<TheAttire />
 </div>
