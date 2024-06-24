@@ -13,8 +13,8 @@
 
 	export let data: LayoutData;
 
-	let galleryImages = data.response.gallery_images
-		? data.response.gallery_images.map((el: string) => {
+	let carauselImages = data.response.carausel_images
+		? data.response.carausel_images.map((el: string) => {
 				return pb.files.getUrl(data.response, el);
 			})
 		: [];
@@ -29,6 +29,6 @@
 		bgMain={pb.files.getUrl(data.response, data.response.starter_main)}
 		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
 	/>
-	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {galleryImages} />
+	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<TheAttire />
 </div>

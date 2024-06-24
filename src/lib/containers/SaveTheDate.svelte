@@ -9,7 +9,7 @@
 	dayjs.extend(duration);
 
 	export let weddingDay: Dayjs;
-	export let galleryImages: string[];
+	export let carauselImages: string[];
 
 	let isShow: boolean = false;
 	let countdowns = [
@@ -76,7 +76,7 @@
 				effect="slide"
 				autoplay="true"
 			>
-				{#each galleryImages as image}
+				{#each carauselImages as image}
 					<swiper-slide>
 						<img src={image} alt="invite" class="rounded" />
 					</swiper-slide>
