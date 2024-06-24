@@ -8,6 +8,7 @@
 	import Starter from "$lib/containers/Starter.svelte";
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
 	import TheAttire from "$lib/containers/TheAttire.svelte";
+	import Gallery from "$lib/containers/Gallery.svelte";
 
 	register();
 
@@ -15,6 +16,11 @@
 
 	let carauselImages = data.response.carausel_images
 		? data.response.carausel_images.map((el: string) => {
+				return pb.files.getUrl(data.response, el);
+			})
+		: [];
+	let galleryImages = data.response.gallery_images
+		? data.response.gallery_images.map((el: string) => {
 				return pb.files.getUrl(data.response, el);
 			})
 		: [];
@@ -31,4 +37,5 @@
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<TheAttire />
+	<Gallery {galleryImages} />
 </div>
