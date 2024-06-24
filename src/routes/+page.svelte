@@ -9,6 +9,7 @@
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
 	import TheAttire from "$lib/containers/TheAttire.svelte";
 	import Gallery from "$lib/containers/Gallery.svelte";
+	import RSVP from "$lib/containers/RSVP.svelte";
 
 	register();
 
@@ -38,4 +39,5 @@
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<TheAttire />
 	<Gallery {galleryImages} />
+	<RSVP {data} />
 </div>

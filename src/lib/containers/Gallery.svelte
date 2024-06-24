@@ -2,7 +2,7 @@
 	export let galleryImages: string[];
 </script>
 
-<div class="h-screen w-screen max-h-screen">
+<div class="min-h-screen w-screen">
 	<div class="grid grid-cols-1 lg:grid-cols-2">
 		<div>
 			<div>
