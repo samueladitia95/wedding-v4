@@ -52,7 +52,7 @@
 			<div>{weddingDay.format("dddd, MMMM D YYYY")}</div>
 		</div>
 
-		<div class="grid grid-cols-2 gap-12">
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
 			{#each countdowns as countdown}
 				<div class="flex flex-col justify-center items-center gap-4">
 					<div class=" text-3xl md:text-6xl font-arizona font-light">{countdown.value}</div>
