@@ -10,6 +10,9 @@ export default {
 				jakarta: ["Jakarta", ...defaultTheme.fontFamily.sans],
 				safira: ["Safira", ...defaultTheme.fontFamily.sans],
 			},
+			fontSize: {
+				"4.5xl": "40px",
+			},
 		},
 		container: {
 			center: true,
