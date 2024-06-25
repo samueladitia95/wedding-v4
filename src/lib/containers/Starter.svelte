@@ -49,28 +49,28 @@
 >
 	<!-- Intro Screen -->
 	{#if isShow && !isShowScrollDown}
-		<div>
-			<div in:fade={{ duration: 1000, delay: 500 }} out:fade={{ duration: 1000, delay: 0 }}>
+		<div class="rw-screen min-h-screen relative">
+			<div in:fade={{ duration: 1000, delay: 500 }} out:fade={{ duration: 500, delay: 0 }}>
 				<img
 					src={introMobile}
 					alt="intro mobile"
-					class="absolute w-full h-full object-cover md:hidden"
+					class="absolute w-full h-screen object-cover md:hidden"
 				/>
 				<img
 					src={introTablet}
 					alt="intro tablet"
-					class="absolute w-full h-full object-cover hidden md:block lg:hidden"
+					class="absolute w-full h-screen object-cover hidden md:block lg:hidden"
 				/>
 				<img
 					src={introDesktop}
 					alt="intro desktop"
-					class="absolute w-full h-full object-fill hidden lg:block"
+					class="absolute w-full h-screen object-fill hidden lg:block"
 				/>
 			</div>
 			<div
 				class="absolute w-full z-10 top-1/4 lg:top-1/2 lg:transform lg:-translate-y-1/2 flex justify-center"
 				in:fade={{ duration: 1500, delay: 1500 }}
-				out:fade={{ duration: 1000, delay: 0 }}
+				out:fade={{ duration: 500, delay: 0 }}
 			>
 				<img src={mainLogo} alt="main logo" class="text-white w-40" />
 			</div>
@@ -96,7 +96,7 @@
 		<div
 			class="bg-cover"
 			style="background-image: url({bgMain});"
-			in:fade={{ duration: 1500, delay: 1500 }}
+			in:fade={{ duration: 1500, delay: 500 }}
 		>
 			<div class="bg-black bg-opacity-20 w-full">
 				<div class="container text-white h-screen">
@@ -136,7 +136,7 @@
 		<div
 			class="h-screen bg-cover bg-center md:bg-top"
 			style="background-image: url({bgSecondary});"
-			in:fade={{ duration: 1500, delay: 1500 }}
+			in:fade={{ duration: 1500, delay: 500 }}
 		>
 			<div class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6">
 				<div class="font-safira leading-relaxed md:text-2xl/relaxed font-light px-16 md:px-48">
