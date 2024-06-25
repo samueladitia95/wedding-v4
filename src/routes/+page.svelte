@@ -11,6 +11,7 @@
 	import Gallery from "$lib/containers/Gallery.svelte";
 	import RSVP from "$lib/containers/RSVP.svelte";
 	import Wishes from "$lib/containers/Wishes.svelte";
+	import Details from "$lib/containers/Details.svelte";
 
 	register();
 
@@ -27,6 +28,12 @@
 			})
 		: [];
 
+	let detailLogos = data.response.details_logos
+		? data.response.details_logos.map((el: string) => {
+				return pb.files.getUrl(data.response, el);
+			})
+		: [];
+
 	onMount(() => {
 		document.body.classList.add("no-scrollbar");
 	});
@@ -38,6 +45,7 @@
 		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
+	<Details logos={detailLogos} />
 	<TheAttire />
 	<Gallery {galleryImages} />
 	<div class="lg:grid lg:grid-cols-2">
