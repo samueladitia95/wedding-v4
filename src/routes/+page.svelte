@@ -43,6 +43,10 @@
 	<Starter
 		bgMain={pb.files.getUrl(data.response, data.response.starter_main)}
 		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
+		introMobile={pb.files.getUrl(data.response, data.response.intro_image_mobile)}
+		introTablet={pb.files.getUrl(data.response, data.response.intro_image_tablet)}
+		introDesktop={pb.files.getUrl(data.response, data.response.intro_image_desktop)}
+		mainLogo={pb.files.getUrl(data.response, data.response.main_logo)}
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<Details logos={detailLogos} />
