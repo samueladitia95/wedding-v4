@@ -44,4 +44,8 @@
 		<RSVP {data} />
 		<Wishes {data} />
 	</div>
+
+	<div class="p-4 bg-bg-primary text-white font-jakarta text-sm text-center">
+		Website Invitation by Another Chapter
+	</div>
 </div>
