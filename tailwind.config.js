@@ -19,8 +19,10 @@ export default {
 				"bg-primary": "#1A1A1A",
 				"bg-attire": "#121212",
 				"green-sage": "#7B7D68",
-				"error": "#FF3E3E",
-				"ring": "rgba(255, 255, 255, 0.23)"
+				error: "#FF3E3E",
+				ring: "rgba(255, 255, 255, 0.23)",
+				"input-border": "rgba(255, 255, 255, 0.23)",
+				"placeholder-text": "rgba(255, 255, 255, 0.78)",
 			},
 		},
 		container: {
