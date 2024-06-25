@@ -10,6 +10,7 @@
 	import TheAttire from "$lib/containers/TheAttire.svelte";
 	import Gallery from "$lib/containers/Gallery.svelte";
 	import RSVP from "$lib/containers/RSVP.svelte";
+	import Wishes from "$lib/containers/Wishes.svelte";
 
 	register();
 
@@ -40,4 +41,5 @@
 	<TheAttire />
 	<Gallery {galleryImages} />
 	<RSVP {data} />
+	<Wishes {data} />
 </div>
