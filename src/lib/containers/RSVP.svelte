@@ -26,10 +26,10 @@
 </script>
 
 <div class="w-screen min-h-screen bg-green-sage">
-	<div class="container text-white py-16 flex flex-col gap-10">
+	<div class="container text-white py-16 md:py-44 flex flex-col gap-10">
 		<div class="flex flex-col gap-4">
 			<div class="font-safira font-light text-5xl/normal">RSVP & WISHES</div>
-			<div class="font-arizona font-light text-base/normal">
+			<div class="font-arizona font-light text-base/normal md:text-xl/relaxed md:max-w-xl">
 				Kindly express your best wishes and confirm your attendance by completing the form provided
 				below. Thank you!
 			</div>
@@ -91,7 +91,8 @@
 
 			<button
 				type="submit"
-				class="font-jakarta text-sm bg-bg-primary text-white rounded-full p-4 mt-8"
+				disabled
+				class="font-jakarta text-sm bg-bg-primary text-white rounded-full p-4 mt-8 disabled:bg-disabled-button disabled:text-disabled-text"
 			>
 				Submit RSVP
 			</button>

@@ -23,6 +23,8 @@ export default {
 				ring: "rgba(255, 255, 255, 0.23)",
 				"input-border": "rgba(255, 255, 255, 0.23)",
 				"placeholder-text": "rgba(255, 255, 255, 0.78)",
+				"disabled-button": "#6A6A6A",
+				"disabled-text": "#888181",
 			},
 		},
 		container: {
