@@ -36,7 +36,7 @@
 </script>
 
 <div>
-	<div class="min-h-screen">
+	<div class="min-h-screen w-screen lg:w-full">
 		<div class="bg-white text-text-primary">
 			<!-- Main Section -->
 			<div class="container py-20 max-w-3xl">

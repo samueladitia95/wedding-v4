@@ -25,8 +25,8 @@
 	});
 </script>
 
-<div class="w-screen min-h-screen bg-green-sage">
-	<div class="container text-white py-16 md:py-44 flex flex-col gap-10">
+<div class="w-screen lg:w-full min-h-screen bg-green-sage">
+	<div class="container text-white py-16 md:py-44 lg:pt-20 flex flex-col gap-10">
 		<div class="flex flex-col gap-4">
 			<div class="font-safira font-light text-5xl/normal">RSVP & WISHES</div>
 			<div class="font-arizona font-light text-base/normal md:text-xl/relaxed md:max-w-xl">

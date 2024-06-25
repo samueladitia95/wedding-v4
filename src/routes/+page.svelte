@@ -40,6 +40,8 @@
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<TheAttire />
 	<Gallery {galleryImages} />
-	<RSVP {data} />
-	<Wishes {data} />
+	<div class="lg:grid lg:grid-cols-2">
+		<RSVP {data} />
+		<Wishes {data} />
+	</div>
 </div>
