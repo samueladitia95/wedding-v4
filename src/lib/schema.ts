@@ -18,11 +18,11 @@ export const schemaRsvpAndWishes = z
 				message: "Email is Invalid",
 			}),
 		isAttend: z
-			.boolean({
+			.number({
 				required_error: "Message is Required",
 			})
-			.default(true),
-		plusOne: z.string({ required_error: "Wishes is Required" }),
+			.default(1),
+		plusOne: z.string({}),
 		wishes: z
 			.string({ required_error: "Wishes is Required" })
 			.trim()

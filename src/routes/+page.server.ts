@@ -14,8 +14,23 @@ export const actions = {
 			return fail(400, { form });
 		}
 
-		const data = {};
-		await pb.collection("rsvp_wedding_v3").create(data);
+		const dataRsvp = {
+			project: "default",
+			template_id: "wedding_v4",
+			attendee_name: form.data.name,
+			attendee_phone: form.data.phoneNumber,
+			is_attend: !!Number(form.data.isAttend),
+			partner_name: form.data.plusOne,
+		};
+		await pb.collection("rsvp").create(dataRsvp);
+
+		const dataWish = {
+			project: "default",
+			template_id: "wedding_v4",
+			name: form.data.name,
+			wishes: form.data.wishes,
+		};
+		await pb.collection("wishes").create(dataWish);
 
 		return { form };
 	},

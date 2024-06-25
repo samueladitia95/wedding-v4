@@ -64,21 +64,21 @@
 					<div class="flex gap-12 md:gap-28 w-full ml-3 mt-3">
 						<div class="flex gap-2 items-center">
 							<input
-								name="subject"
+								name="isAttend"
 								type="radio"
 								class="w-5 h-5 appearance-none border-2 border-ring rounded-full box-content checked:bg-white checked:ring-4 checked:ring-green-sage checked:ring-inset"
 								bind:group={$form.isAttend}
-								value={true}
+								value={1}
 							/>
 							<div class="text-ca-blue font-editor-hand">YES</div>
 						</div>
 						<div class="flex gap-2 items-center">
 							<input
-								name="subject"
+								name="isAttend"
 								type="radio"
 								class="w-5 h-5 appearance-none border-2 border-ring rounded-full box-content checked:bg-white checked:ring-4 checked:ring-green-sage checked:ring-inset"
 								bind:group={$form.isAttend}
-								value={false}
+								value={0}
 							/>
 							<div class="text-ca-blue font-editor-hand">NO</div>
 						</div>
@@ -103,7 +103,7 @@
 
 				<button
 					type="submit"
-					disabled
+					disabled={isSuccess}
 					class="font-jakarta text-sm bg-bg-primary text-white rounded-full p-4 mt-8 disabled:bg-disabled-button disabled:text-disabled-text"
 				>
 					Submit RSVP
