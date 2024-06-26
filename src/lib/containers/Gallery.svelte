@@ -31,7 +31,7 @@
 						src={galleryImages[1]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: -200, duration: 1500, delay: 2500 }}
+						transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
 					/>
 				{/if}
 
@@ -40,14 +40,14 @@
 						src={galleryImages[2]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: 200, duration: 1500, delay: 2000 }}
+						transition:fly={{ x: 200, duration: 1000, delay: 1500 }}
 					/>
 				{/if}
 			</div>
 		</div>
 		<div>
 			{#if isShow}
-				<div in:fade={{ duration: 1500, delay: 3000 }}>
+				<div in:fade={{ duration: 1000, delay: 2500 }}>
 					<img src={galleryImages[3]} alt="gallery1" class="w-full" />
 				</div>
 			{/if}
@@ -57,7 +57,7 @@
 						src={galleryImages[4]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: -200, duration: 1500, delay: 3000 }}
+						transition:fly={{ x: -200, duration: 1000, delay: 3000 }}
 					/>
 				{/if}
 
@@ -66,7 +66,7 @@
 						src={galleryImages[5]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: 200, duration: 1500, delay: 3000 }}
+						transition:fly={{ x: 200, duration: 1000, delay: 3500 }}
 					/>
 				{/if}
 			</div>
