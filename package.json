@@ -38,10 +38,10 @@
 		"node": "20.x"
 	},
 	"dependencies": {
+		"@selemondev/svelte-marquee": "^0.0.2",
 		"clsx": "^2.1.1",
 		"dayjs": "^1.11.11",
 		"pocketbase": "^0.21.3",
-		"svelte-inview": "^4.0.2",
-		"swiper": "^11.1.4"
+		"svelte-inview": "^4.0.2"
 	}
 }

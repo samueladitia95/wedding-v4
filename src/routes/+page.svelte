@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import dayjs from "dayjs";
-	import { register } from "swiper/element/bundle";
 	import type { LayoutData } from "./$types";
 	import { pb } from "$lib/pocketbase";
 
@@ -12,8 +11,6 @@
 	import RSVP from "$lib/containers/RSVP.svelte";
 	import Wishes from "$lib/containers/Wishes.svelte";
 	import Details from "$lib/containers/Details.svelte";
-
-	register();
 
 	export let data: LayoutData;
 

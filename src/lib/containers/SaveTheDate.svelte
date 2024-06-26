@@ -6,6 +6,9 @@
 	import { inview } from "svelte-inview";
 	import { fade, fly } from "svelte/transition";
 
+	import { Marquee } from "@selemondev/svelte-marquee";
+	import "@selemondev/svelte-marquee/dist/style.css";
+
 	dayjs.extend(duration);
 
 	export let weddingDay: Dayjs;
@@ -48,7 +51,7 @@
 	}}
 	on:inview_change={handleChange}
 >
-	<div class="container py-28 text-text-primary text-center flex flex-col gap-12 md:gap-16">
+	<div class="container pt-28 text-text-primary text-center flex flex-col gap-12 md:gap-16">
 		{#if isShow}
 			<div
 				class="font-safira uppercase text-4.5xl/tight md:text-5xl font-light mx-10"
@@ -99,33 +102,15 @@
 				</a>
 			</div>
 		{/if}
-
-		{#if isShow}
-			<div class="transition:fly={{ y: -200, duration: 2000, delay: 1500 }}">
-				<swiper-container
-					space-between="8"
-					loop="true"
-					free-mode="true"
-					speed="5000"
-					effect="slide"
-					autoplay="true"
-				>
-					{#each carauselImages as image}
-						<swiper-slide>
-							<img src={image} alt="invite" class="rounded" />
-						</swiper-slide>
-					{/each}
-				</swiper-container>
-			</div>
-		{/if}
 	</div>
+	{#if isShow}
+		<div in:fade={{ duration: 1000, delay: 1500 }} class="py-28">
+			<Marquee fade={true}
+				>{#each carauselImages as image}
+					<img src={image} alt="invite" class="rounded max-h-[360px] md:max-h-[370px] lg:max-h-[600px] object-contain" />
+				{/each}
+			</Marquee>
+		</div>
+	{/if}
 </div>
 
-<style>
-	swiper-container swiper-slide {
-		height: 300px;
-		max-width: 240px;
-		line-height: 300px;
-		object-fit: cover;
-	}
-</style>
