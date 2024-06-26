@@ -33,6 +33,9 @@
 		},
 	];
 
+	const eventCalenderLink =
+		"https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MjgzZGNobjc3ZG81bHZkMGZjaHZjYmJ1ZzIgc2FtdWVsYWRpdGlhOTVAbQ&tmsrc=samueladitia95%40gmail.com";
+
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
 	};
@@ -72,12 +75,14 @@
 					</div>
 				{/if}
 				{#if isShow}
-					<button
-						class="px-6 md:px-10 py-2.5 md:py-4 bg-bg-primary rounded-full font-jakarta text-white md:text-2xl"
-						transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
-					>
-						Get Direction
-					</button>
+					<a href={eventCalenderLink} target="_blank">
+						<button
+							class="px-6 md:px-10 py-2.5 md:py-4 bg-bg-primary rounded-full font-jakarta text-white md:text-2xl"
+							transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
+						>
+							Get Direction
+						</button>
+					</a>
 				{/if}
 			</div>
 
