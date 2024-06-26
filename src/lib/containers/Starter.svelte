@@ -52,7 +52,7 @@
 >
 	<!-- Intro Screen -->
 	{#if isShow && !isShowScrollDown}
-		<div class="rw-screen min-h-screen relative">
+		<div class="w-screen min-h-screen relative">
 			<div in:fade={{ duration: 1000, delay: 500 }} out:fade={{ duration: 500, delay: 0 }}>
 				<img
 					src={introMobile}
@@ -62,12 +62,12 @@
 				<img
 					src={introTablet}
 					alt="intro tablet"
-					class="absolute w-full h-screen object-cover hidden md:block lg:hidden"
+					class="absolute w-full h-screen object-cover hidden md:!block lg:hidden"
 				/>
 				<img
 					src={introDesktop}
 					alt="intro desktop"
-					class="absolute w-full h-screen object-fill hidden lg:block"
+					class="absolute w-full h-screen object-so hidden lg:!block"
 				/>
 			</div>
 			<div
@@ -96,11 +96,8 @@
 	<!-- Main Screen -->
 	<!-- Main bg image -->
 	{#if isShowScrollDown && !isShow}
-		<div
-			class="bg-cover"
-			style="background-image: url({bgMain});"
-			in:fade={{ duration: 1500, delay: 500 }}
-		>
+		<div in:fade={{ duration: 1500, delay: 500 }}>
+			<img src={bgMain} alt="main" class="absolute w-full h-screen object-cover" />
 			<div class="bg-black bg-opacity-20 w-full">
 				<div class="container text-white h-screen">
 					<div class="text-center pt-28 md:pt-40 pb-10 lg:pb-0 flex flex-col gap-10 h-full">
