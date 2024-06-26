@@ -25,6 +25,8 @@
 			document.body.addEventListener("mousewheel", MouseWheelHandler, false);
 			// Firefox
 			document.body.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+
+			document.body.addEventListener("touchmove", MouseWheelHandler, false);
 		}, 3000);
 
 		function MouseWheelHandler() {
@@ -33,6 +35,7 @@
 			}, 2000);
 			document.body.removeEventListener("mousewheel", MouseWheelHandler, false);
 			document.body.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
+			document.body.removeEventListener("touchmove", MouseWheelHandler, false);
 			isShowScrollDown = true;
 			isShow = false;
 		}
@@ -79,7 +82,7 @@
 
 	{#if isShow && !isShowScrollDown}
 		<div
-			class="absolute w-full z-10 bottom-20 flex justify-center"
+			class="absolute w-full z-10 bottom-40 flex justify-center"
 			transition:fly={{ y: 100, duration: 300, delay: 3000 }}
 		>
 			<div
