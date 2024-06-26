@@ -29,7 +29,7 @@
 </script>
 
 <div
-	class="w-screen lg:w-full min-h-screen bg-green-sage"
+	class="w-screen lg:!w-full min-h-screen bg-green-sage"
 	use:inview={{
 		rootMargin: "-100px",
 		unobserveOnEnter: true,
@@ -106,7 +106,7 @@
 				<button
 					type="submit"
 					disabled={isSuccess}
-					class="font-jakarta text-sm bg-bg-primary text-white rounded-full p-4 mt-8 disabled:bg-disabled-button disabled:text-disabled-text"
+					class="font-jakarta text-sm !bg-bg-primary text-white rounded-full p-4 mt-8 disabled:bg-disabled-button disabled:text-disabled-text"
 				>
 					Submit RSVP
 				</button>

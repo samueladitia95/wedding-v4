@@ -37,7 +37,7 @@
 </script>
 
 <div
-	class="min-h-screen w-screen lg:w-full"
+	class="min-h-screen w-screen lg:!w-full"
 	use:inview={{
 		rootMargin: "-100px",
 		unobserveOnEnter: true,
