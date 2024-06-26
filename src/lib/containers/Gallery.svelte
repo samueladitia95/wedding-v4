@@ -31,7 +31,7 @@
 						src={galleryImages[1]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: -200, duration: 1000, delay: 500 }}
+						transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
 					/>
 				{/if}
 
@@ -40,7 +40,7 @@
 						src={galleryImages[2]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: 200, duration: 1000, delay: 500 }}
+						transition:fly={{ x: 200, duration: 1000, delay: 1000 }}
 					/>
 				{/if}
 			</div>
@@ -57,7 +57,7 @@
 						src={galleryImages[4]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
+						transition:fly={{ x: -200, duration: 1000, delay: 1500 }}
 					/>
 				{/if}
 
@@ -66,7 +66,7 @@
 						src={galleryImages[5]}
 						alt="gallery1"
 						class="w-full"
-						transition:fly={{ x: 200, duration: 1000, delay: 1000 }}
+						transition:fly={{ x: 200, duration: 1000, delay: 1500 }}
 					/>
 				{/if}
 			</div>
