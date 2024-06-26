@@ -29,7 +29,7 @@
 <div
 	class="w-screen lg:w-full min-h-screen bg-green-sage"
 	use:inview={{
-		rootMargin: "-200px",
+		rootMargin: "-100px",
 		unobserveOnEnter: true,
 	}}
 	on:inview_change={handleChange}

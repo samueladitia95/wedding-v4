@@ -41,7 +41,7 @@
 <div
 	class="w-screen min-h-screen bg-white text-text-primary"
 	use:inview={{
-		rootMargin: "-200px",
+		rootMargin: "-100px",
 		unobserveOnEnter: true,
 	}}
 	on:inview_change={handleChange}

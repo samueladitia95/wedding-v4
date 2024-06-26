@@ -12,7 +12,7 @@
 <div
 	class="bg-bg-attire h-screen w-screen"
 	use:inview={{
-		rootMargin: "-200px",
+		rootMargin: "-100px",
 		unobserveOnEnter: true,
 	}}
 	on:inview_change={handleChange}
