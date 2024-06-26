@@ -6,6 +6,7 @@
 	import type { LayoutData } from "../../routes/$types";
 	import Input from "$lib/components/Input.svelte";
 	import { fade } from "svelte/transition";
+	import { invalidateAll } from "$app/navigation";
 
 	export let data: LayoutData;
 
@@ -21,6 +22,7 @@
 		onUpdated({ form }) {
 			if (form.valid) {
 				isSuccess = true;
+				invalidateAll();
 			}
 		},
 	});
