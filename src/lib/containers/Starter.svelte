@@ -42,6 +42,8 @@
 	});
 </script>
 
+<meta name="theme-color" content="#000" />
+
 <div
 	class="w-screen min-h-screen relative"
 	use:inview={{

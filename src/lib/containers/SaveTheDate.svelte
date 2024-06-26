@@ -43,6 +43,8 @@
 	};
 </script>
 
+<meta name="theme-color" content={isShow ? "#fff" : "#000"} />
+
 <div
 	class="w-screen min-h-screen"
 	use:inview={{
@@ -107,10 +109,13 @@
 		<div in:fade={{ duration: 1000, delay: 1500 }} class="py-28">
 			<Marquee fade={true}
 				>{#each carauselImages as image}
-					<img src={image} alt="invite" class="rounded max-h-[360px] md:max-h-[370px] lg:max-h-[600px] object-contain" />
+					<img
+						src={image}
+						alt="invite"
+						class="rounded max-h-[360px] md:max-h-[370px] lg:max-h-[600px] object-contain"
+					/>
 				{/each}
 			</Marquee>
 		</div>
 	{/if}
 </div>
-
