@@ -8,7 +8,7 @@
 	export let value: string;
 </script>
 
-<div class="relative h-11 w-full font-editor-hand">
+<div class="relative h-11 w-full font-jakarta">
 	<input
 		placeholder={secondaryLabel ? secondaryLabel : label}
 		class="peer h-full w-full border-b border-input-border bg-transparent pt-4 pb-1.5 text-placeholder-text outline outline-0 transition-all placeholder-shown:border-input-border focus:text-placeholder-text focus:outline-0 placeholder:opacity-0 focus:placeholder:opacity-100 md:text-xl placeholder:text-placeholder-text"

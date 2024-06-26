@@ -58,8 +58,8 @@
 				<Input name="email" label="Email" bind:value={$form.email} error={$errors.email} />
 
 				<div>
-					<div class="font-editor-hand text-ca-blue md:text-xl">
-						Will you be attending the wedding?<span class="text-ca-error">*</span>
+					<div class="font-jakarta font-light text-white md:text-xl">
+						Will you be attending the wedding?<span class="text-error">*</span>
 					</div>
 					<div class="flex gap-12 md:gap-28 w-full ml-3 mt-3">
 						<div class="flex gap-2 items-center">
