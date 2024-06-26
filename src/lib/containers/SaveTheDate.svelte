@@ -18,6 +18,8 @@
 		{ type: "Minute", value: 0 },
 		{ type: "Second", value: 0 },
 	];
+	const eventCalenderLink =
+		"https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MjgzZGNobjc3ZG81bHZkMGZjaHZjYmJ1ZzIgc2FtdWVsYWRpdGlhOTVAbQ&tmsrc=samueladitia95%40gmail.com";
 
 	onMount(() => {
 		setInterval(function () {
@@ -87,12 +89,14 @@
 		</div>
 		{#if isShow}
 			<div>
-				<button
-					class="px-6 md:px-9 py-2.5 md:py-4 bg-bg-primary text-white rounded-full font-jakarta md:text-2xl"
-					transition:fly={{ x: -200, duration: 2000, delay: 1500 }}
-				>
-					Add to Calender
-				</button>
+				<a href={eventCalenderLink} target="_blank">
+					<button
+						class="px-6 md:px-9 py-2.5 md:py-4 bg-bg-primary text-white rounded-full font-jakarta md:text-2xl hover:opacity-80"
+						transition:fly={{ x: -200, duration: 2000, delay: 1500 }}
+					>
+						Add to Calender
+					</button>
+				</a>
 			</div>
 		{/if}
 

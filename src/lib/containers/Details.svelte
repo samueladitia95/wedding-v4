@@ -33,8 +33,7 @@
 		},
 	];
 
-	const eventCalenderLink =
-		"https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MjgzZGNobjc3ZG81bHZkMGZjaHZjYmJ1ZzIgc2FtdWVsYWRpdGlhOTVAbQ&tmsrc=samueladitia95%40gmail.com";
+	const goggleMapLink = "https://maps.app.goo.gl/EuJEAtTHZeSSd3bF7";
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
@@ -75,14 +74,14 @@
 					</div>
 				{/if}
 				{#if isShow}
-					<a href={eventCalenderLink} target="_blank">
+					<a href={goggleMapLink} target="_blank">
 						<button
-							class="px-6 md:px-10 py-2.5 md:py-4 bg-bg-primary rounded-full font-jakarta text-white md:text-2xl"
+							class="px-6 md:px-10 py-2.5 md:py-4 bg-bg-primary rounded-full font-jakarta text-white md:text-2xl hover:opacity-80"
 							transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
 						>
 							Get Direction
-						</button>
-					</a>
+						</button></a
+					>
 				{/if}
 			</div>
 
