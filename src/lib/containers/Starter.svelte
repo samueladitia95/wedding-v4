@@ -71,7 +71,7 @@
 				<img
 					src={introDesktop}
 					alt="intro desktop"
-					class="absolute w-full h-screen object-so hidden lg:!block"
+					class="absolute w-full h-screen object-fill hidden lg:!block"
 				/>
 			</div>
 			<div
@@ -115,7 +115,7 @@
 				<img
 					src={bgMainDesktop}
 					alt="main"
-					class="absolute w-full h-screen object-cover hidden lg:!block"
+					class="absolute w-full h-screen object-fill hidden lg:!block"
 				/>
 				<div class="container text-white h-screen relative z-10">
 					<div class="text-center pt-28 md:pt-40 pb-10 lg:pb-0 flex flex-col gap-10 h-full">
@@ -165,7 +165,7 @@
 			<img
 				src={bgSecondaryDesktop}
 				alt="secondary"
-				class="absolute w-full h-screen object-cover hidden lg:!block"
+				class="absolute w-full h-screen object-cover object-top hidden lg:!block"
 			/>
 			<div
 				class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6 relative z-10"
