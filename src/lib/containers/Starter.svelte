@@ -118,7 +118,9 @@
 					class="absolute w-full h-screen object-fill hidden lg:!block"
 				/>
 				<div class="container text-white h-screen relative z-10">
-					<div class="text-center pt-28 md:pt-40 pb-10 lg:pb-0 flex flex-col gap-10 h-full">
+					<div
+						class="text-center pt-28 md:!pt-40 lg:!pt-48 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
+					>
 						<div class="flex flex-col gap-7">
 							<div class="font-jakarta text-xs font-light uppercase">TOGETHER WITH OUR PARENTS</div>
 							<div class="font-arizona text-sm flex flex-col gap-6">
@@ -128,7 +130,7 @@
 						</div>
 
 						<div
-							class="font-safira text-4.5xl/relaxed md:text-5xl/relaxed font-light flex flex-col gap-4 px-10 md:px-40 lg:grid lg:grid-cols-3 lg:items-center"
+							class="font-safira text-4.5xl/relaxed md:text-5xl/relaxed font-light flex flex-col gap-4 px-10 md:px-40 lg:!grid lg:!grid-cols-3 lg:!items-center"
 						>
 							<div>REYNALDO SAPUTRA</div>
 							<div class="text-5xl md:text-6xl">&</div>
