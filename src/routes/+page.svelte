@@ -3,6 +3,7 @@
 	import dayjs from "dayjs";
 	import type { LayoutData } from "./$types";
 	import { pb } from "$lib/pocketbase";
+	import { SvelteToast } from "@zerodevx/svelte-toast";
 
 	import Starter from "$lib/containers/Starter.svelte";
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
@@ -62,3 +63,4 @@
 		Website Invitation by Another Chapter
 	</div>
 </div>
+<SvelteToast />

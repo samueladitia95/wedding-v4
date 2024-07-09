@@ -7,6 +7,7 @@
 	import Input from "$lib/components/Input.svelte";
 	import { fade } from "svelte/transition";
 	import { invalidateAll } from "$app/navigation";
+	import { toast } from "@zerodevx/svelte-toast";
 
 	export let data: LayoutData;
 
@@ -23,6 +24,18 @@
 			if (form.valid) {
 				isSuccess = true;
 				invalidateAll();
+				toast.push("Success!", {
+					theme: {
+						"--toastColor": "mintcream",
+						"--toastBackground": "rgba(72,187,120,0.9)",
+						"--toastBarBackground": "#2F855A",
+					},
+					duration: 10000,
+				});
+			} else {
+				toast.push("Please Try Again", {
+					duration: 10000,
+				});
 			}
 		},
 	});
