@@ -85,7 +85,7 @@
 				{/if}
 			</div>
 
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-14 items-center lg:items-bottom">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-16 items-center lg:items-bottom">
 				{#each details as detail, index}
 					{#if isShow}
 						<div
@@ -94,13 +94,13 @@
 						>
 							<img src={detail.logo} alt="event" class="w-14 max-h-16 md:w-16 md:!max-h-24" />
 							<div>
-								<div class="font-jakarta uppercase md:text-2xl">{detail.event}</div>
+								<div class="font-jakarta uppercase md:!text-2xl">{detail.event}</div>
 								{#if detail.notes}
-									<div class="font-arizona text-xs italic md:text-2xl">{detail.notes}</div>
+									<div class="font-arizona text-xs italic md:!text-2xl">{detail.notes}</div>
 								{/if}
 							</div>
-							<div class="font-jakarta uppercase md:text-2xl">{detail.time}</div>
-							<div class="font-arizona text-sm md:text-2xl">{detail.location}</div>
+							<div class="font-jakarta uppercase md:!text-2xl">{detail.time}</div>
+							<div class="font-arizona text-sm md:!text-2xl">{detail.location}</div>
 						</div>
 					{/if}
 				{/each}
