@@ -6,7 +6,9 @@
 	export let introMobile: string;
 	export let introTablet: string;
 	export let introDesktop: string;
-	export let bgMain: string;
+	export let bgMainMobile: string;
+	export let bgMainTablet: string;
+	export let bgMainDesktop: string;
 	export let bgSecondary: string;
 
 	let isShow: boolean = false;
@@ -97,9 +99,23 @@
 	<!-- Main bg image -->
 	{#if isShowScrollDown && !isShow}
 		<div in:fade={{ duration: 1500, delay: 500 }}>
-			<img src={bgMain} alt="main" class="absolute w-full h-screen object-cover" />
 			<div class="bg-black bg-opacity-20 w-full">
-				<div class="container text-white h-screen">
+				<img
+					src={bgMainMobile}
+					alt="main"
+					class="absolute w-full h-screen object-cover md:hidden"
+				/>
+				<img
+					src={bgMainTablet}
+					alt="main"
+					class="absolute w-full h-screen object-cover hidden md:!block lg:hidden"
+				/>
+				<img
+					src={bgMainDesktop}
+					alt="main"
+					class="absolute w-full h-screen object-cover hidden lg:!block"
+				/>
+				<div class="container text-white h-screen relative z-10">
 					<div class="text-center pt-28 md:pt-40 pb-10 lg:pb-0 flex flex-col gap-10 h-full">
 						<div class="flex flex-col gap-7">
 							<div class="font-jakarta text-xs font-light uppercase">TOGETHER WITH OUR PARENTS</div>

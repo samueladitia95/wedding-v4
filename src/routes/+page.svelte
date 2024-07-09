@@ -38,7 +38,9 @@
 
 <div>
 	<Starter
-		bgMain={pb.files.getUrl(data.response, data.response.starter_main)}
+		bgMainMobile={pb.files.getUrl(data.response, data.response.starter_main_mobile)}
+		bgMainTablet={pb.files.getUrl(data.response, data.response.starter_main_tablet)}
+		bgMainDesktop={pb.files.getUrl(data.response, data.response.starter_main_desktop)}
 		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
 		introMobile={pb.files.getUrl(data.response, data.response.intro_image_mobile)}
 		introTablet={pb.files.getUrl(data.response, data.response.intro_image_tablet)}
