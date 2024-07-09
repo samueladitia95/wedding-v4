@@ -50,14 +50,27 @@
 			</div>
 
 			<form class="flex flex-col gap-6" use:enhance method="POST" action="/">
-				<Input name="name" label="Fill Your Name" bind:value={$form.name} error={$errors.name} />
+				<Input
+					name="name"
+					label="Fill Your Name"
+					bind:value={$form.name}
+					error={$errors.name}
+					isRequired
+				/>
 				<Input
 					name="phoneNumber"
 					label="Phone Number"
 					bind:value={$form.phoneNumber}
 					error={$errors.phoneNumber}
+					isRequired
 				/>
-				<Input name="email" label="Email" bind:value={$form.email} error={$errors.email} />
+				<Input
+					name="email"
+					label="Email"
+					bind:value={$form.email}
+					error={$errors.email}
+					isRequired
+				/>
 
 				<div>
 					<div class="font-jakarta font-light text-white md:text-xl">
@@ -87,13 +100,15 @@
 					</div>
 				</div>
 
-				<Input
-					name="plusOne"
-					label="Are you bringing a +1?"
-					secondaryLabel="If so, please let us know who"
-					bind:value={$form.plusOne}
-					error={$errors.plusOne}
-				/>
+				{#if $form.isAttend === 1}
+					<Input
+						name="plusOne"
+						label="Are you bringing a +1?"
+						secondaryLabel="If so, please let us know who"
+						bind:value={$form.plusOne}
+						error={$errors.plusOne}
+					/>
+				{/if}
 
 				<Input
 					name="wishes"
@@ -101,6 +116,7 @@
 					secondaryLabel="Write your wishes"
 					bind:value={$form.wishes}
 					error={$errors.wishes}
+					isRequired
 				/>
 
 				<button

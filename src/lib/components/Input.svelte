@@ -6,6 +6,8 @@
 	export let secondaryLabel: string | undefined = undefined;
 	export let error: string[] | undefined = undefined;
 	export let value: string;
+	export let disabled: boolean = false;
+	export let isRequired: boolean = false;
 </script>
 
 <div class="relative h-11 w-full font-jakarta">
@@ -16,11 +18,15 @@
 		required
 		autocomplete="off"
 		{name}
+		{disabled}
 	/>
 	<div
 		class="after:content[''] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-sm leading-tight text-placeholder-text transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-placeholder-text after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-placeholder-text peer-focus:text-sm peer-focus:leading-tight peer-focus:text-placeholder-text peer-focus:after:scale-x-100 peer-focus:after:border-input-border"
 	>
-		{label} <span class="text-error">*</span>
+		{label}
+		{#if isRequired}
+			<span class="text-error">*</span>
+		{/if}
 	</div>
 
 	{#if error && error.length}
