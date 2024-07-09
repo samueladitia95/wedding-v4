@@ -41,7 +41,9 @@
 		bgMainMobile={pb.files.getUrl(data.response, data.response.starter_main_mobile)}
 		bgMainTablet={pb.files.getUrl(data.response, data.response.starter_main_tablet)}
 		bgMainDesktop={pb.files.getUrl(data.response, data.response.starter_main_desktop)}
-		bgSecondary={pb.files.getUrl(data.response, data.response.starter_secondary)}
+		bgSecondaryMobile={pb.files.getUrl(data.response, data.response.starter_secondary_mobile)}
+		bgSecondaryTablet={pb.files.getUrl(data.response, data.response.starter_secondary_tablet)}
+		bgSecondaryDesktop={pb.files.getUrl(data.response, data.response.starter_secondary_desktop)}
 		introMobile={pb.files.getUrl(data.response, data.response.intro_image_mobile)}
 		introTablet={pb.files.getUrl(data.response, data.response.intro_image_tablet)}
 		introDesktop={pb.files.getUrl(data.response, data.response.intro_image_desktop)}

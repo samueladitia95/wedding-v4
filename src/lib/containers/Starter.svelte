@@ -9,7 +9,9 @@
 	export let bgMainMobile: string;
 	export let bgMainTablet: string;
 	export let bgMainDesktop: string;
-	export let bgSecondary: string;
+	export let bgSecondaryMobile: string;
+	export let bgSecondaryTablet: string;
+	export let bgSecondaryDesktop: string;
 
 	let isShow: boolean = false;
 	let isShowScrollDown: boolean = false;
@@ -149,12 +151,25 @@
 	<!-- Secondary Screen -->
 	<!-- Secondary bg image -->
 	{#if isShowScrollDown && !isShow}
-		<div
-			class="h-screen bg-cover bg-center md:bg-top"
-			style="background-image: url({bgSecondary});"
-			in:fade={{ duration: 1500, delay: 500 }}
-		>
-			<div class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6">
+		<div class="h-screen" in:fade={{ duration: 1500, delay: 500 }}>
+			<img
+				src={bgSecondaryMobile}
+				alt="secondary"
+				class="absolute w-full h-screen object-cover md:hidden"
+			/>
+			<img
+				src={bgSecondaryTablet}
+				alt="secondary"
+				class="absolute w-full h-screen object-cover hidden md:!block lg:hidden"
+			/>
+			<img
+				src={bgSecondaryDesktop}
+				alt="secondary"
+				class="absolute w-full h-screen object-cover hidden lg:!block"
+			/>
+			<div
+				class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6 relative z-10"
+			>
 				<div class="font-safira leading-relaxed md:text-2xl/relaxed font-light px-16 md:px-48">
 					I HAVE FOUND THE ONE WHOM MY SOUL LOVES
 				</div>
