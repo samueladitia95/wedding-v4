@@ -96,7 +96,7 @@
 			<div>
 				<a href={eventCalenderLink} target="_blank">
 					<button
-						class="px-6 md:px-9 py-2.5 md:py-4 bg-bg-primary text-white rounded-full font-jakarta md:text-2xl hover:opacity-80"
+						class="px-6 py-2.5 bg-bg-primary text-white rounded-full font-jakarta md:text-xl hover:opacity-80"
 						transition:fly={{ x: -200, duration: 2000, delay: 1500 }}
 					>
 						Add to Calender

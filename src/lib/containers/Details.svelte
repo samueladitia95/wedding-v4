@@ -76,7 +76,7 @@
 				{#if isShow}
 					<a href={goggleMapLink} target="_blank">
 						<button
-							class="px-6 md:px-10 py-2.5 md:py-4 bg-bg-primary rounded-full font-jakarta text-white md:text-2xl hover:opacity-80"
+							class="px-6 py-2.5 bg-bg-primary rounded-full font-jakarta text-white md:text-xl hover:opacity-80"
 							transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
 						>
 							Get Direction
