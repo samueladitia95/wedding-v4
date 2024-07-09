@@ -51,7 +51,7 @@
 >
 	{#if isShow}
 		<div
-			class="container text-white py-16 md:py-44 lg:pt-20 flex flex-col gap-10"
+			class="container text-white py-16 md:py-44 lg:pt-20 flex flex-col gap-14"
 			in:fade={{ duration: 1000, delay: 500 }}
 		>
 			<div class="flex flex-col gap-4">
@@ -86,7 +86,7 @@
 				/>
 
 				<div>
-					<div class="font-jakarta font-light text-white md:text-xl">
+					<div class="font-jakarta font-light text-white">
 						Will you be attending the wedding?<span class="text-error">*</span>
 					</div>
 					<div class="flex gap-12 md:gap-28 w-full ml-3 mt-3">
@@ -98,7 +98,7 @@
 								bind:group={$form.isAttend}
 								value={1}
 							/>
-							<div class="text-ca-blue font-editor-hand">YES</div>
+							<div class="font-jakarta">YES</div>
 						</div>
 						<div class="flex gap-2 items-center">
 							<input
@@ -108,7 +108,7 @@
 								bind:group={$form.isAttend}
 								value={0}
 							/>
-							<div class="text-ca-blue font-editor-hand">NO</div>
+							<div class="font-jakarta">NO</div>
 						</div>
 					</div>
 				</div>
