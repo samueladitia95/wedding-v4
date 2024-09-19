@@ -16,21 +16,15 @@ export const actions = {
 
 		const dataRsvp = {
 			project: "default",
-			template_id: "wedding_v4",
-			attendee_name: form.data.name,
-			attendee_phone: form.data.phoneNumber,
-			is_attend: !!Number(form.data.isAttend),
-			partner_name: form.data.plusOne,
-		};
-		await pb.collection("rsvp").create(dataRsvp);
-
-		const dataWish = {
-			project: "default",
-			template_id: "wedding_v4",
 			name: form.data.name,
+			phone: form.data.phone,
+			email: form.data.email,
+			is_attending: form.data.is_attending,
+			plus_one: form.data.plus_one,
 			wishes: form.data.wishes,
+			from: form.data.from,
 		};
-		await pb.collection("wishes").create(dataWish);
+		await pb.collection("rsvp_wedding_v4").create(dataRsvp);
 
 		return { form };
 	},

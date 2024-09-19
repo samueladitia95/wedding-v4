@@ -56,7 +56,7 @@
 								class="flex flex-col justify-start items-start gap-8"
 								transition:fly={{ x: 200, duration: 1000, delay: 200 * (index + 1) }}
 							>
-								<div class="font-jakarta uppercase">{wish.name}</div>
+								<div class="font-jakarta uppercase">{wish.from}</div>
 								<div class="flex flex-col gap-6">
 									<div class="font-jakarta font-light font-base/relaxed">{wish.wishes}</div>
 									<div class="font-arizona font-light text-sm">

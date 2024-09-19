@@ -17,7 +17,7 @@
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
 	};
-	const { form, errors, enhance, reset } = superForm(data.form, {
+	const { form, errors, enhance, constraints } = superForm(data.form, {
 		validationMethod: "onblur",
 		validators: zod(schemaRsvpAndWishes),
 		onUpdated({ form }) {
@@ -67,22 +67,24 @@
 					name="name"
 					label="Fill Your Name"
 					bind:value={$form.name}
+					{...$constraints.name}
 					error={$errors.name}
 					isRequired
 				/>
 				<Input
-					name="phoneNumber"
+					name="phone"
 					label="Phone Number"
-					bind:value={$form.phoneNumber}
-					error={$errors.phoneNumber}
+					bind:value={$form.phone}
+					{...$constraints.phone}
+					error={$errors.phone}
 					isRequired
 				/>
 				<Input
 					name="email"
 					label="Email"
 					bind:value={$form.email}
+					{...$constraints.email}
 					error={$errors.email}
-					isRequired
 				/>
 
 				<div>
@@ -92,34 +94,35 @@
 					<div class="flex gap-12 md:gap-28 w-full ml-3 mt-3">
 						<div class="flex gap-2 items-center">
 							<input
-								name="isAttend"
+								name="is_attending"
 								type="radio"
 								class="w-5 h-5 appearance-none border-2 border-ring rounded-full box-content checked:bg-white checked:ring-4 checked:ring-green-sage checked:ring-inset"
-								bind:group={$form.isAttend}
-								value={1}
+								bind:group={$form.is_attending}
+								value="Yes"
 							/>
 							<div class="font-jakarta">YES</div>
 						</div>
 						<div class="flex gap-2 items-center">
 							<input
-								name="isAttend"
+								name="is_attending"
 								type="radio"
 								class="w-5 h-5 appearance-none border-2 border-ring rounded-full box-content checked:bg-white checked:ring-4 checked:ring-green-sage checked:ring-inset"
-								bind:group={$form.isAttend}
-								value={0}
+								bind:group={$form.is_attending}
+								value="No"
 							/>
 							<div class="font-jakarta">NO</div>
 						</div>
 					</div>
 				</div>
 
-				{#if $form.isAttend === 1}
+				{#if $form.is_attending === "Yes"}
 					<Input
-						name="plusOne"
+						name="plus_one"
 						label="Are you bringing a +1?"
 						secondaryLabel="If so, please let us know who"
-						bind:value={$form.plusOne}
-						error={$errors.plusOne}
+						bind:value={$form.plus_one}
+						{...$constraints.plus_one}
+						error={$errors.plus_one}
 					/>
 				{/if}
 
@@ -130,6 +133,15 @@
 					bind:value={$form.wishes}
 					error={$errors.wishes}
 					isRequired
+				/>
+
+				<Input
+					name="from"
+					label="From"
+					secondaryLabel="Enter your name here to send your wishes."
+					bind:value={$form.from}
+					{...$constraints.from}
+					error={$errors.from}
 				/>
 
 				<button
