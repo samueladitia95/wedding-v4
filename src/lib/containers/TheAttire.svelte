@@ -40,12 +40,13 @@
 					class="py-6 md:py-0 flex flex-col gap-4"
 					transition:fly={{ x: -200, duration: 1000, delay: 1500 }}
 				>
-					<div class="font-jakarta uppercase md:text-2xl">Holy Matrimony</div>
-					<div class="font-arizona font-light md:text-2xl">White Semi Formal Attire</div>
+					<!-- <div class="font-jakarta uppercase md:text-2xl">Holy Matrimony</div> -->
+					<!-- <div class="font-arizona font-light md:text-2xl">White Semi Formal Attire</div>-->
+					<div class="font-arizona font-light md:text-2xl">White Formal Attire</div>
 				</div>
 			{/if}
 
-			{#if isShow}
+			<!-- {#if isShow}
 				<div
 					class="py-6 md:py-0 flex flex-col gap-4"
 					transition:fly={{ x: -200, duration: 1000, delay: 2000 }}
@@ -53,7 +54,7 @@
 					<div class="font-jakarta uppercase md:text-2xl">Reception</div>
 					<div class="font-arizona font-light md:text-2xl">Formal Attire and Dark Colors</div>
 				</div>
-			{/if}
+			{/if} -->
 		</div>
 	</div>
 </div>

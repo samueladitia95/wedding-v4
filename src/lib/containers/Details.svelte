@@ -10,27 +10,28 @@
 			logo: logos[0],
 			event: "Holy Matrimony",
 			time: "10:00 AM",
+			notes: "",
 			location: "Java Ballroom, The Westin Hotel",
 		},
-		{
-			logo: logos[1],
-			event: "LUNCH RECEPTION",
-			time: "12:00 PM",
-			location: "Java Ballroom, The Westin Hotel",
-		},
-		{
-			logo: logos[2],
-			event: "Tea pai",
-			notes: "(For family only)",
-			time: "12:00 PM",
-			location: "Java Ballroom, The Westin Hotel",
-		},
-		{
-			logo: logos[3],
-			event: "AFTER PARTY",
-			time: "22:00 PM",
-			location: "Retreat Lounge, The Westin Hotel",
-		},
+		// {
+		// 	logo: logos[1],
+		// 	event: "LUNCH RECEPTION",
+		// 	time: "12:00 PM",
+		// 	location: "Java Ballroom, The Westin Hotel",
+		// },
+		// {
+		// 	logo: logos[2],
+		// 	event: "Tea pai",
+		// 	notes: "(For family only)",
+		// 	time: "12:00 PM",
+		// 	location: "Java Ballroom, The Westin Hotel",
+		// },
+		// {
+		// 	logo: logos[3],
+		// 	event: "AFTER PARTY",
+		// 	time: "22:00 PM",
+		// 	location: "Retreat Lounge, The Westin Hotel",
+		// },
 	];
 
 	const goggleMapLink = "https://maps.app.goo.gl/EuJEAtTHZeSSd3bF7";
@@ -85,7 +86,7 @@
 				{/if}
 			</div>
 
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-16 items-center lg:items-bottom">
+			<div class="grid grid-cols-1 lg:grid-cols-1 gap-20 md:gap-16 items-center lg:items-bottom">
 				{#each details as detail, index}
 					{#if isShow}
 						<div
