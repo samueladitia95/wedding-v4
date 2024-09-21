@@ -86,11 +86,12 @@
 				{/if}
 			</div>
 
-			<div class="grid grid-cols-1 lg:grid-cols-1 gap-20 md:gap-16 items-center lg:items-bottom">
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-20 md:gap-16 items-center lg:items-bottom">
 				{#each details as detail, index}
 					{#if isShow}
 						<div
 							class="flex flex-col items-center gap-4 text-center"
+							class:col-span-3={details.length === 1}
 							transition:fly={{ x: -200, duration: 1000, delay: 1000 + 200 * (index + 1) }}
 						>
 							<img src={detail.logo} alt="event" class="w-14 max-h-16 md:w-16 md:!max-h-24" />
