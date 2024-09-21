@@ -9,9 +9,9 @@ export const load: LayoutLoad = async ({ url }) => {
 	const response = await pb.collection("wedding_v4").getFirstListItem('project="default"');
 	const page = url.searchParams.get("n") || 1;
 	const wishes = await pb.collection("rsvp_wedding_v4").getList(1, 5 * +page, {
-		filter: 'project = "default"',
-		fields: 'wishes,from,created',
-		sort: '-created'
+		filter: 'project = "reynaldo_cynthia"',
+		fields: "wishes,from,created",
+		sort: "-created",
 	});
 	return {
 		response,

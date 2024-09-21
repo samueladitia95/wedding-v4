@@ -15,7 +15,7 @@ export const actions = {
 		}
 
 		const dataRsvp = {
-			project: "default",
+			project: "reynaldo_cynthia",
 			name: form.data.name,
 			phone: form.data.phone,
 			email: form.data.email,
