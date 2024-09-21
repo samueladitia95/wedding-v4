@@ -15,22 +15,23 @@
 		// },
 		{
 			logo: logos[1],
-			event: "LUNCH RECEPTION",
-			time: "12:00 PM",
-			location: "Java Ballroom, The Westin Hotel",
+			event: "TEA PAI",
+			notes: "(For family only)",
+			time: "15:30 PM",
+			location: "Denpasar Room, The Westin Hotel",
 		},
 		{
 			logo: logos[2],
-			event: "Tea pai",
-			notes: "(For family only)",
-			time: "12:00 PM",
+			event: "DINNER RECEPTION",
+			time: "18:30 PM",
 			location: "Java Ballroom, The Westin Hotel",
 		},
+
 		{
 			logo: logos[3],
 			event: "AFTER PARTY",
-			time: "22:00 PM",
-			location: "Retreat Lounge, The Westin Hotel",
+			time: "21:00 PM",
+			location: "Denpasar Room, The Westin Hotel",
 		},
 	];
 
