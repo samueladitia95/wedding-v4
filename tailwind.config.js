@@ -26,6 +26,7 @@ export default {
 				"placeholder-text": "rgba(255, 255, 255, 0.78)",
 				"disabled-button": "#6A6A6A",
 				"disabled-text": "#888181",
+				"bg-button": "rgba(255, 255, 255, 0.54)",
 			},
 		},
 		container: {

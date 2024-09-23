@@ -23,27 +23,13 @@
 	onMount(() => {
 		document.body.scrollIntoView(true);
 		document.body.classList.add("overflow-hidden");
-
-		setTimeout(() => {
-			// IE9, Chrome, Safari, Opera
-			document.body.addEventListener("mousewheel", MouseWheelHandler, false);
-			// Firefox
-			document.body.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-
-			document.body.addEventListener("touchmove", MouseWheelHandler, false);
-		}, 3000);
-
-		function MouseWheelHandler() {
-			setTimeout(() => {
-				document.body.classList.remove("overflow-hidden");
-			}, 2000);
-			document.body.removeEventListener("mousewheel", MouseWheelHandler, false);
-			document.body.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
-			document.body.removeEventListener("touchmove", MouseWheelHandler, false);
-			isShowScrollDown = true;
-			isShow = false;
-		}
 	});
+
+	const handleOpenInvitation = () => {
+		document.body.classList.remove("overflow-hidden");
+		isShowScrollDown = true;
+		isShow = false;
+	};
 </script>
 
 <div
@@ -89,11 +75,12 @@
 			class="absolute w-full z-10 bottom-40 flex justify-center"
 			transition:fly={{ y: 100, duration: 300, delay: 3000 }}
 		>
-			<div
-				class="text-white font-safira text-xs font-light py-2 border-b border-solid border-white"
+			<button
+				class="text-white font-jakarta text-sm py-3 px-6 bg-bg-button rounded-full"
+				on:click={handleOpenInvitation}
 			>
-				SCROLL DOWN
-			</div>
+				OPEN INVITATION
+			</button>
 		</div>
 	{/if}
 
