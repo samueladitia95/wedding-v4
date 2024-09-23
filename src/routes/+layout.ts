@@ -10,12 +10,13 @@ export const load: LayoutLoad = async ({ url }) => {
 	const page = url.searchParams.get("n") || 1;
 	const wishes = await pb.collection("rsvp_wedding_v4").getList(1, 5 * +page, {
 		filter: 'project = "default"',
-		fields: 'wishes,from,created',
-		sort: '-created'
+		fields: "wishes,from,created",
+		sort: "-created",
 	});
+
 	return {
+		form,
 		response,
 		wishes,
-		form,
 	};
 };

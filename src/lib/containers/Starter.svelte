@@ -121,24 +121,38 @@
 					<div
 						class="text-center pt-28 md:!pt-40 lg:!pt-48 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
 					>
-						<div class="flex flex-col gap-7">
-							<div class="font-jakarta text-xs font-light uppercase">TOGETHER WITH OUR PARENTS</div>
-							<div class="font-arizona text-sm flex flex-col gap-6">
+						<div class="flex flex-col gap-6">
+							<div class="font-arizona text-sm lg:text-2xl xl:text-base flex flex-col gap-6">
 								<div>Mr. Tanuwangsa & Mrs. Jenny Ho</div>
+							</div>
+							<div class="font-jakarta text-xs lg:text-base xl:text-base font-light uppercase">
+								TOGETHER WITH OUR PARENTS
+							</div>
+							<div class="font-arizona text-sm lg:text-2xl xl:text-base flex flex-col gap-6">
 								<div>Mr. Lie Tjoei Beng & Mrs. Meliana Budiarta</div>
 							</div>
 						</div>
 
 						<div
-							class="font-safira text-4.5xl/relaxed md:text-5xl/relaxed font-light flex flex-col gap-4 px-10 md:px-40 lg:!grid lg:!grid-cols-3 lg:!items-center"
+							class="font-safira text-4.5xl/relaxed
+							md:text-5xl/relaxed
+							tracking-widest
+							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center
+							pt-10 lg:pt-28
+							"
 						>
 							<div>REYNALDO SAPUTRA</div>
-							<div class="text-5xl md:text-6xl">&</div>
+							<div class="font-ivora text-5xl md:text-6xl">&</div>
 							<div>CYNTHIA LIE</div>
 						</div>
 
-						<div class="font-arizona font-light px-10 md:px-56 md:leading-relaxed">
-							Cordially invite you to the wedding of their children
+						<div
+							class="font-arizona
+							font-light
+							text-sm md:text-base lg:text-xl xl:text-base
+							px-10 pt-10 lg:pt-28 md:px-56 md:leading-relaxed"
+						>
+							Request the honour of your presence at <br /> the marriage of their children
 						</div>
 
 						<div class="flex items-center justify-center flex-grow">
@@ -172,10 +186,17 @@
 			<div
 				class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6 relative z-10"
 			>
-				<div class="font-safira leading-relaxed md:text-2xl/relaxed font-light px-16 md:px-48">
-					I HAVE FOUND THE ONE WHOM MY SOUL LOVES
+				<div
+					class="font-safira font-light
+					text-base md:text-2xl/relaxed lg:text-3xl/relaxed xl:text-2xl/relaxed
+					leading-relaxed
+					px-16 md:px-48 tracking-widest"
+				>
+					I HAVE FOUND THE ONE <br /> WHOM MY SOUL LOVES
 				</div>
-				<div class="font-rome italic text-xs md:text-base">Song of Solomon 3:4</div>
+				<div class="font-rome italic text-xs md:text-base lg:text-2xl xl:text-base tracking-widest">
+					Song of Solomon 3:4
+				</div>
 			</div>
 		</div>
 	{/if}

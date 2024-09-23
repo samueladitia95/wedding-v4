@@ -35,6 +35,23 @@
 	onMount(() => {
 		document.body.classList.add("no-scrollbar");
 	});
+
+	let player: HTMLAudioElement;
+	let isPlaying = false;
+	let songUrl: string = data.response.song_url || "";
+	const togglePlay = () => {
+		isPlaying = !isPlaying;
+	};
+
+	$: {
+		if (player) {
+			if (isPlaying) {
+				player.play();
+			} else {
+				player.pause();
+			}
+		}
+	}
 </script>
 
 <div>
