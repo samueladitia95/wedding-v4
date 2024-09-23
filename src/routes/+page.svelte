@@ -38,7 +38,7 @@
 
 	let player: HTMLAudioElement;
 	let isPlaying = false;
-	let songUrl: string = data.response.song_url || "";
+	let songUrl: string = data.song || "";
 	const togglePlay = () => {
 		isPlaying = !isPlaying;
 	};
@@ -66,6 +66,8 @@
 		introTablet={pb.files.getUrl(data.response, data.response.intro_image_tablet)}
 		introDesktop={pb.files.getUrl(data.response, data.response.intro_image_desktop)}
 		mainLogo={pb.files.getUrl(data.response, data.response.main_logo)}
+		{togglePlay}
+		bind:isPlaying
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<Details logos={detailLogos} />
@@ -81,3 +83,5 @@
 	</div>
 </div>
 <SvelteToast />
+
+<audio id="music-player" src={songUrl} bind:this={player} loop={true} />

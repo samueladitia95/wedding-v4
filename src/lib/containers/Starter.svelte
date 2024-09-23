@@ -12,9 +12,17 @@
 	export let bgSecondaryMobile: string;
 	export let bgSecondaryTablet: string;
 	export let bgSecondaryDesktop: string;
+	export let togglePlay: () => void;
+	export let isPlaying: boolean;
+
+	import playButton from "$lib/icons/buttons/Play-enabled.svg";
+	import playButtonHovered from "$lib/icons/buttons/Play-hovered.svg";
+	import pauseButton from "$lib/icons/buttons/Pause-enable.svg";
+	import pauseButtonHovered from "$lib/icons/buttons/Pause-hovered.svg";
 
 	let isShow: boolean = false;
 	let isShowScrollDown: boolean = false;
+	let isHovered: boolean = false;
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
@@ -26,6 +34,7 @@
 	});
 
 	const handleOpenInvitation = () => {
+		togglePlay();
 		document.body.classList.remove("overflow-hidden");
 		isShowScrollDown = true;
 		isShow = false;
@@ -188,3 +197,27 @@
 		</div>
 	{/if}
 </div>
+
+{#if isShowScrollDown && !isShow}
+	<div class="z-[1000]" in:fade={{ duration: 2000 }}>
+		<div class="fixed left-8 bottom-4 z-[1000]">
+			<button
+				class="cursor-pointer z-[1000]"
+				on:click={togglePlay}
+				on:mouseenter={() => (isHovered = true)}
+				on:mouseleave={() => (isHovered = false)}
+			>
+				<img
+					src={isPlaying
+						? isHovered
+							? pauseButtonHovered
+							: pauseButton
+						: isHovered
+							? playButtonHovered
+							: playButton}
+					alt="Media Button"
+				/>
+			</button>
+		</div>
+	</div>
+{/if}
