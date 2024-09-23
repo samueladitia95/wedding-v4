@@ -8,8 +8,9 @@ export default {
 			fontFamily: {
 				arizona: ["Arizona", ...defaultTheme.fontFamily.sans],
 				jakarta: ["Jakarta", ...defaultTheme.fontFamily.sans],
-				safira: ["Safira", ...defaultTheme.fontFamily.sans],
+				ivora: ["ivyora-display", ...defaultTheme.fontFamily.sans],
 				rome: ["Times New Roman", ...defaultTheme.fontFamily.serif],
+				safira: ["Safira", ...defaultTheme.fontFamily.sans],
 			},
 			fontSize: {
 				"4.5xl": "40px",

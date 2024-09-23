@@ -121,4 +121,18 @@
 		font-display: swap;
 		font-style: normal;
 	}
+	@font-face {
+		font-family: "ivyora-display";
+		src: local("ivyora-display"), url("/fonts/ivory/IvyOraDisplay-Thin.ttf");
+		font-weight: 100;
+		font-display: swap;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "ivyora-display";
+		src: local("ivyora-display"), url("/fonts/ivory/IvyOraDisplay-Light.ttf");
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	}
 }
