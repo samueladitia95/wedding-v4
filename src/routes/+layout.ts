@@ -14,9 +14,15 @@ export const load: LayoutLoad = async ({ url }) => {
 		sort: "-created",
 	});
 
+	let song: string = "";
+	if (response.song_url) {
+		song = pb.files.getUrl(response, response.song_url);
+	}
+
 	return {
 		form,
 		response,
 		wishes,
+		song,
 	};
 };
