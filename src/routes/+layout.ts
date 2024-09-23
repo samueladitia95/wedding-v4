@@ -13,9 +13,10 @@ export const load: LayoutLoad = async ({ url }) => {
 		fields: "wishes,from,created",
 		sort: "-created",
 	});
+
 	return {
+		form,
 		response,
 		wishes,
-		form,
 	};
 };

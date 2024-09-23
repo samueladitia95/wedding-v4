@@ -59,7 +59,7 @@
 				class="font-safira uppercase text-4.5xl/tight md:text-5xl font-light mx-10"
 				in:fade={{ duration: 1000, delay: 500 }}
 			>
-				Save The Date
+				Save Our Date
 			</div>
 		{/if}
 		{#if isShow}
@@ -67,8 +67,7 @@
 				class="font-jakarta font-light uppercase text-center flex flex-col gap-4 md:hidden"
 				in:fade={{ duration: 1000, delay: 500 }}
 			>
-				<div>{weddingDay.format("dddd")}</div>
-				<div>{weddingDay.format("MMMM D YYYY")}</div>
+				<div>{weddingDay.format("dddd, MMMM D, YYYY")}</div>
 			</div>
 
 			<div

@@ -65,7 +65,7 @@
 			<div class="p-6 text-center flex flex-col gap-6 items-center justify-center">
 				{#if isShow}
 					<div class="font-arizona text-xl md:text-2xl" in:fade={{ duration: 1000, delay: 500 }}>
-						At The Westin Hotel, Jakarta
+						AT THE WESTIN HOTEL, JAKARTA
 					</div>
 					<div
 						class="font-arizona text-sm md:text-base italic"
