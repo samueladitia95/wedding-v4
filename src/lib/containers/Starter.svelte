@@ -151,8 +151,8 @@
 							Request the honour of your presence at <br /> the marriage of their children
 						</div>
 
-						<div class="flex items-center justify-center flex-grow">
-							<div class="border-l border-solid w-0 h-full" />
+						<div class="flex items-start justify-center flex-grow">
+							<div class="border-l border-solid w-0 h-full line" />
 						</div>
 					</div>
 				</div>
@@ -221,3 +221,19 @@
 		</div>
 	</div>
 {/if}
+
+<style>
+	.line {
+		height: 0;
+		animation: extend-line 4s ease-in-out forwards;
+	}
+
+	@keyframes extend-line {
+		from {
+			height: 0;
+		}
+		to {
+			height: 100%;
+		}
+	}
+</style>
