@@ -63,7 +63,7 @@
 
 			<div class="p-6 text-center flex flex-col gap-6 items-center justify-center">
 				{#if isShow}
-					<div class="font-arizona text-xl md:text-2xl" in:fade={{ duration: 1000, delay: 500 }}>
+					<div class="font-jakarta text-xl md:text-2xl" in:fade={{ duration: 1000, delay: 500 }}>
 						AT THE WESTIN HOTEL, JAKARTA
 					</div>
 					<div
@@ -95,7 +95,7 @@
 							transition:fly={{ x: -200, duration: 1000, delay: 1000 + 200 * (index + 1) }}
 						>
 							<img src={detail.logo} alt="event" class="w-14 max-h-16 md:w-16 md:!max-h-24" />
-							<div>
+							<div class="gap-4">
 								<div class="font-jakarta uppercase md:!text-2xl">{detail.event}</div>
 								{#if detail.notes}
 									<div class="font-arizona text-xs italic md:!text-2xl">{detail.notes}</div>
