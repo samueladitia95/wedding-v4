@@ -66,7 +66,7 @@
 				<img
 					src={introDesktop}
 					alt="intro desktop"
-					class="absolute w-full h-screen object-fill hidden lg:!block"
+					class="absolute w-full h-screen object-cover hidden lg:!block"
 				/>
 			</div>
 			<div
@@ -111,7 +111,7 @@
 				<img
 					src={bgMainDesktop}
 					alt="main"
-					class="absolute w-full h-screen object-fill hidden lg:!block"
+					class="absolute w-full h-screen object-cover hidden lg:!block"
 				/>
 				<div class="container text-white h-screen relative z-10">
 					<div
