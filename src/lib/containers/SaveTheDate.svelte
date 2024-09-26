@@ -21,8 +21,7 @@
 		{ type: "Minute", value: 0 },
 		{ type: "Second", value: 0 },
 	];
-	const eventCalenderLink =
-		"https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MjgzZGNobjc3ZG81bHZkMGZjaHZjYmJ1ZzIgc2FtdWVsYWRpdGlhOTVAbQ&tmsrc=samueladitia95%40gmail.com";
+	const eventCalenderLink = "https://calendar.app.google/Y3QJj7te9m9W7u4j9";
 
 	onMount(() => {
 		setInterval(function () {
