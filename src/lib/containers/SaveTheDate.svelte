@@ -53,13 +53,13 @@
 	}}
 	on:inview_change={handleChange}
 >
-	<div class="container pt-28 text-text-primary text-center flex flex-col gap-12 md:gap-16">
+	<div class="container py-28 text-text-primary text-center flex flex-col gap-10">
 		{#if isShow}
 			<div
 				class="font-safira uppercase text-4.5xl/tight md:text-5xl font-light mx-10"
 				in:fade={{ duration: 1000, delay: 500 }}
 			>
-				Save Our Date
+				Save The Date
 			</div>
 		{/if}
 		{#if isShow}
@@ -78,21 +78,21 @@
 			</div>
 		{/if}
 
-		<div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-12 pt-16">
 			{#each countdowns as countdown, index}
 				{#if isShow}
 					<div
 						class="flex flex-col justify-center items-center gap-4"
 						transition:fly={{ x: -200, duration: 1000, delay: 1000 + 200 * (index + 1) }}
 					>
-						<div class=" text-3xl md:text-6xl font-arizona font-light">{countdown.value}</div>
-						<div class="text-sm md:text-2xl font-jakarta font-light">{countdown.type}(S)</div>
+						<div class="text-4xl font-arizona font-light">{countdown.value}</div>
+						<div class="text-lg font-jakarta font-light">{countdown.type}(S)</div>
 					</div>
 				{/if}
 			{/each}
 		</div>
 		{#if isShow}
-			<div>
+			<div class="pt-16">
 				<a href={eventCalenderLink} target="_blank">
 					<button
 						class="px-6 py-2.5 bg-bg-primary text-white rounded-full font-jakarta md:text-xl hover:opacity-80"
