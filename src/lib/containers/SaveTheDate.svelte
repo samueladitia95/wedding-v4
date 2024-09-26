@@ -106,7 +106,7 @@
 	</div>
 	{#if isShow}
 		<div in:fade={{ duration: 1000, delay: 1500 }} class="py-28">
-			<Marquee fade={true}
+			<Marquee fade={false}
 				>{#each carauselImages as image}
 					<img
 						src={image}
