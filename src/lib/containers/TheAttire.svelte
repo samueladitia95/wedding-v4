@@ -24,7 +24,7 @@
 					class="font-safira font-light text-5xl lg:text-7xl"
 					transition:fly={{ x: -200, duration: 1000, delay: 500 }}
 				>
-					THE ATTIRE
+					ATTIRE
 				</div>
 			{/if}
 			{#if isShow}
