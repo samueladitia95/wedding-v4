@@ -111,11 +111,11 @@
 				<img
 					src={bgMainDesktop}
 					alt="main"
-					class="absolute w-full h-screen object-cover hidden lg:!block"
+					class="absolute w-full h-[120vh] object-cover hidden lg:!block"
 				/>
-				<div class="container text-white h-screen relative z-10">
+				<div class="container text-white h-[120vh] relative z-10">
 					<div
-						class="text-center pt-28 md:!pt-40 lg:!pt-48 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
+						class="text-center pt-28 md:!pt-40 lg:!pt-28 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
 					>
 						<div class="flex flex-col gap-6">
 							<div class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6">
