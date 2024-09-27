@@ -64,14 +64,14 @@
 
 			<div class="p-6 text-center flex flex-col gap-6 items-center justify-center">
 				{#if isShow}
-					<div class="font-jakarta text-xl md:text-2xl" in:fade={{ duration: 1000, delay: 500 }}>
+					<div class="font-jakarta text-base md:text-xl" in:fade={{ duration: 1000, delay: 500 }}>
 						AT THE WESTIN HOTEL, JAKARTA
 					</div>
 					<div
-						class="font-arizona text-sm md:text-base italic"
+						class="font-arizona text-sm md:text-base italic md:leading-loose md:tracking-wide"
 						in:fade={{ duration: 1000, delay: 500 }}
 					>
-						Jl. H.R. Rasuna Said No. Kav. C-22A, Karet Kuningan, Kec. Setiabudi, <br /> Kota Jakarta
+						Jl. H.R. Rasuna Said No. Kav. C-22A, Karet Kuningan, Kec. Setiabudi, <br /> <br /> Kota Jakarta
 						Selatan, Jakarta, 12940
 					</div>
 				{/if}
@@ -95,15 +95,15 @@
 							class:col-span-3={details.length === 1}
 							transition:fly={{ x: -200, duration: 1000, delay: 1000 + 200 * (index + 1) }}
 						>
-							<img src={detail.logo} alt="event" class="w-14 max-h-16 md:w-16 md:!max-h-24" />
+							<img src={detail.logo} alt="event" class="w-14 max-h-16 md:w-16 md:!max-h-24 mb-4" />
 							<div class="gap-4">
-								<div class="font-jakarta uppercase md:!text-2xl">{detail.event}</div>
+								<div class="font-jakarta uppercase text-base md:!text-xl">{detail.event}</div>
 								{#if detail.notes}
-									<div class="font-arizona text-xs italic md:!text-2xl">{detail.notes}</div>
+									<div class="font-arizona text-xs italic md:!text-xl">{detail.notes}</div>
 								{/if}
 							</div>
-							<div class="font-jakarta uppercase md:!text-2xl">{detail.time}</div>
-							<div class="font-arizona text-sm md:!text-2xl">{detail.location}</div>
+							<div class="font-jakarta uppercase md:!text-xl">{detail.time}</div>
+							<div class="font-arizona text-sm md:!text-base">{detail.location}</div>
 						</div>
 					{/if}
 				{/each}
