@@ -118,13 +118,13 @@
 						class="text-center pt-28 md:!pt-40 lg:!pt-48 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
 					>
 						<div class="flex flex-col gap-6">
-							<div class="font-arizona text-sm lg:text-2xl xl:text-base flex flex-col gap-6">
+							<div class="font-arizona text-sm lg:text-xl xl:text-base flex flex-col gap-6">
 								<div>Mr. Tanuwangsa & Mrs. Jenny Ho</div>
 							</div>
-							<div class="font-jakarta text-xs lg:text-base xl:text-base font-light uppercase">
-								TOGETHER WITH OUR PARENTS
+							<div class="font-jakarta text-xs lg:text-base font-light uppercase">
+								TOGETHER WITH
 							</div>
-							<div class="font-arizona text-sm lg:text-2xl xl:text-base flex flex-col gap-6">
+							<div class="font-arizona text-sm lg:text-xl xl:text-base flex flex-col gap-6">
 								<div>Mr. Lie Tjoei Beng & Mrs. Meliana Budiarta</div>
 							</div>
 						</div>
@@ -190,7 +190,7 @@
 				>
 					I HAVE FOUND THE ONE <br /> WHOM MY SOUL LOVES
 				</div>
-				<div class="font-rome italic text-xs md:text-base lg:text-2xl xl:text-base tracking-widest">
+				<div class="font-rome italic text-xs md:text-base lg:text-2xl xl:text-base tracking-wide">
 					Song of Solomon 3:4
 				</div>
 			</div>
