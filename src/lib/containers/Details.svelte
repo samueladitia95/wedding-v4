@@ -86,7 +86,7 @@
 				{/if}
 			</div>
 
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-20 md:gap-16 items-center lg:items-bottom">
+			<div class="grid grid-cols-1 xl:grid-cols-3 gap-20 md:gap-16 items-center lg:items-bottom">
 				{#each details as detail, index}
 					{#if isShow}
 						<div
