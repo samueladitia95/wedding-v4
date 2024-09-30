@@ -134,7 +134,7 @@
 							md:!text-5xl/relaxed
 							tracking-widest
 							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center
-							pt-10 lg:pt-28
+							pt-10 lg:pt-28 xl:pt-12
 							"
 						>
 							<div>REYNALDO SAPUTRA</div>
@@ -146,13 +146,13 @@
 							class="font-arizona
 							font-light
 							text-sm md:!text-base lg:!text-xl xl:!text-base
-							px-10 pt-10 lg:pt-28 md:px-56 md:leading-relaxed"
+							px-10 pt-10 lg:pt-28 xl:pt-12 md:px-56 md:leading-relaxed"
 						>
 							Request the honour of your presence at <br /> the marriage of their children
 						</div>
 
 						<div class="flex items-start justify-center flex-grow">
-							<div class="border-l border-solid w-0 h-full line" />
+							<div class="border-l border-solid w-0 h-full line xl:!hidden" />
 						</div>
 					</div>
 				</div>
