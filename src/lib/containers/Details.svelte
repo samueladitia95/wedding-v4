@@ -12,6 +12,7 @@
 			time: "10:00 AM",
 			notes: "",
 			location: "Java Ballroom, The Westin Hotel",
+			tnc: "As much as we adore your little ones, we kindly ask that our celebration remain an adults-only. We appreciate your understanding and look forward to celebrating with you!",
 		},
 		// {
 		// 	logo: logos[1],
@@ -103,6 +104,11 @@
 							</div>
 							<div class="font-jakarta uppercase md:!text-xl">{detail.time}</div>
 							<div class="font-arizona text-sm md:!text-base">{detail.location}</div>
+							{#if detail.tnc}
+								<div class="font-rome font-light text-xs/tight md:text-base max-w-80 md:max-w-none">
+									{detail.tnc}
+								</div>
+							{/if}
 						</div>
 					{/if}
 				{/each}
