@@ -113,7 +113,7 @@
 					alt="main"
 					class="absolute w-full h-[120vh] object-cover hidden lg:!block"
 				/>
-				<div class="container text-white h-[120vh] relative z-10">
+				<div class="container text-white h-screen lg:!h-[120vh] relative z-10">
 					<div
 						class="text-center pt-28 md:!pt-40 lg:!pt-28 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
 					>
