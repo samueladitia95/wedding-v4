@@ -146,7 +146,7 @@
 							class="font-arizona
 							font-light
 							text-sm md:!text-base lg:!text-xl xl:!text-base
-							px-10 pt-10 lg:pt-28 xl:pt-12 md:px-56 md:leading-relaxed"
+							px-10 pt-10 lg:pt-28 xl:pt-12 md:px-48 md:leading-relaxed"
 						>
 							Request the honour of your presence at <br /> the marriage of their children
 						</div>
