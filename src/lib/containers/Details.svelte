@@ -22,7 +22,7 @@
 		},
 		{
 			logo: logos[2],
-			event: "DINNER RECEPTION",
+			event: "SEATED DINNER RECEPTION",
 			time: "18:30 PM",
 			location: "Java Ballroom, The Westin Hotel",
 			tnc: "As much as we adore your little ones, we kindly ask that our celebration remain an <strong>adults-only</strong>. We appreciate your understanding and look forward to celebrating with you!",
