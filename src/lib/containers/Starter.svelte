@@ -194,7 +194,7 @@
 				class="absolute w-full h-screen object-cover object-top hidden lg:!block"
 			/>
 			<div
-				class="container text-white text-center pt-24 md:pt-36 flex flex-col gap-6 relative z-10"
+				class="container text-white text-center pt-10 md:pt-36 flex flex-col gap-6 relative z-10"
 			>
 				<div
 					class="font-safira font-light
