@@ -102,29 +102,41 @@
 					src={bgMainMobile}
 					alt="main"
 					class="absolute w-full h-screen object-cover md:hidden"
+					in:fade={{ duration: 1000, delay: 1000 }}
 				/>
 				<img
 					src={bgMainTablet}
 					alt="main"
 					class="absolute w-full h-screen object-cover hidden md:!block lg:hidden"
+					in:fade={{ duration: 1000, delay: 1000 }}
 				/>
 				<img
 					src={bgMainDesktop}
 					alt="main"
 					class="absolute w-full h-[120vh] object-cover hidden lg:!block"
+					in:fade={{ duration: 1000, delay: 1000 }}
 				/>
 				<div class="container text-white h-[120vh] relative z-10">
 					<div
 						class="text-center pt-28 md:!pt-40 lg:!pt-28 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
 					>
 						<div class="flex flex-col gap-6">
-							<div class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6">
+							<div
+								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
+								in:fade={{ duration: 2000, delay: 3000 }}
+							>
 								<div>Mr. Tanuwangsa & Mrs. Jenny Ho</div>
 							</div>
-							<div class="font-jakarta text-xs lg:!text-base font-light uppercase">
+							<div
+								class="font-jakarta text-xs lg:!text-base font-light uppercase"
+								in:fade={{ duration: 2000, delay: 4000 }}
+							>
 								TOGETHER WITH
 							</div>
-							<div class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6">
+							<div
+								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
+								in:fade={{ duration: 2000, delay: 5000 }}
+							>
 								<div>Mr. Lie Tjoei Beng & Mrs. Meliana Budiarta</div>
 							</div>
 						</div>
@@ -136,6 +148,7 @@
 							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center
 							pt-10 lg:pt-28 xl:pt-12
 							"
+							in:fade={{ duration: 4000, delay: 6000 }}
 						>
 							<div>REYNALDO SAPUTRA</div>
 							<div class="font-ivora text-5xl md:!text-6xl">&</div>
@@ -147,6 +160,7 @@
 							font-light
 							text-sm md:!text-base lg:!text-xl xl:!text-base
 							px-10 pt-10 lg:pt-28 xl:pt-12 md:px-48 md:leading-relaxed"
+							in:fade={{ duration: 2000, delay: 7000 }}
 						>
 							Request the honour of your presence at <br /> the marriage of their children
 						</div>
@@ -228,6 +242,7 @@
 	.line {
 		height: 0;
 		animation: extend-line 5s ease-in-out forwards;
+		animation-delay: 7s;
 	}
 
 	@keyframes extend-line {
