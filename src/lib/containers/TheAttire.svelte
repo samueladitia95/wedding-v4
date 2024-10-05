@@ -42,8 +42,8 @@
 				>
 					<!-- <div class="font-jakarta uppercase md:text-2xl">Holy Matrimony</div> -->
 					<!-- <div class="font-arizona font-light md:text-2xl">White Semi Formal Attire</div>-->
-					<div class="font-arizona font-light underline md:text-2xl">
-						Formal Attire and Dark Colors
+					<div class="font-arizona text-2xl font-light underline md:text-2xl">
+						Black or Dark Colors
 					</div>
 				</div>
 			{/if}

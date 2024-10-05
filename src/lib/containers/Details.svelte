@@ -13,16 +13,17 @@
 		// 	notes: "",
 		// 	location: "Java Ballroom, The Westin Hotel",
 		// },
-		{
-			logo: logos[1],
-			event: "TEA PAI",
-			notes: "(For family only)",
-			time: "15:30 PM",
-			location: "Denpasar Room, The Westin Hotel",
-		},
+		// {
+		// 	logo: logos[1],
+		// 	event: "TEA PAI",
+		// 	notes: "(For family only)",
+		// 	time: "15:30 PM",
+		// 	location: "Denpasar Room, The Westin Hotel",
+		// },
 		{
 			logo: logos[2],
 			event: "SEATED DINNER RECEPTION",
+			notes: "",
 			time: "18:30 PM",
 			location: "Java Ballroom, The Westin Hotel",
 			tnc: "As much as we adore your little ones, we kindly ask that our celebration remain an <strong>adults-only</strong>. We appreciate your understanding and look forward to celebrating with you!",
@@ -31,6 +32,7 @@
 		{
 			logo: logos[3],
 			event: "AFTER PARTY",
+			notes: "",
 			time: "21:00 PM",
 			location: "Denpasar Room, The Westin Hotel",
 		},
