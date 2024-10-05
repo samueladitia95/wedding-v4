@@ -105,7 +105,7 @@
 	</div>
 	{#if isShow}
 		<div in:fade={{ duration: 1000, delay: 1500 }} class="py-28">
-			<Marquee fade={false}
+			<Marquee pauseOnHover={true} fade={false} innerClassName="[--duration:15s]"
 				>{#each carauselImages as image}
 					<img
 						src={image}

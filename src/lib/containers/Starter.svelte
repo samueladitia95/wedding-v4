@@ -123,21 +123,30 @@
 						<div class="flex flex-col gap-6">
 							<div
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
-								in:fade={{ duration: 2000, delay: 3000 }}
+								in:fade={{ duration: 2250, delay: 3000 }}
 							>
 								<div>Mr. Tanuwangsa & Mrs. Jenny Ho</div>
 							</div>
 							<div
 								class="font-jakarta text-xs lg:!text-base font-light uppercase"
-								in:fade={{ duration: 2000, delay: 4000 }}
+								in:fade={{ duration: 2250, delay: 4000 }}
 							>
 								TOGETHER WITH
 							</div>
 							<div
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
-								in:fade={{ duration: 2000, delay: 5000 }}
+								in:fade={{ duration: 2250, delay: 5000 }}
 							>
 								<div>Mr. Lie Tjoei Beng & Mrs. Meliana Budiarta</div>
+							</div>
+							<div
+								class="font-arizona
+							font-light
+							text-sm md:!text-base lg:!text-xl xl:!text-base
+							px-10 pt-10 lg:pt-28 xl:pt-12 md:leading-relaxed"
+								in:fade={{ duration: 2250, delay: 6000 }}
+							>
+								Request the honour of your presence at the marriage of their children
 							</div>
 						</div>
 
@@ -148,21 +157,11 @@
 							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center
 							pt-10 lg:pt-28 xl:pt-12
 							"
-							in:fade={{ duration: 4000, delay: 6000 }}
+							in:fade={{ duration: 4250, delay: 7000 }}
 						>
 							<div>REYNALDO SAPUTRA</div>
 							<div class="font-ivora text-5xl md:!text-6xl">&</div>
 							<div>CYNTHIA LIE</div>
-						</div>
-
-						<div
-							class="font-arizona
-							font-light
-							text-sm md:!text-base lg:!text-xl xl:!text-base
-							px-10 pt-10 lg:pt-28 xl:pt-12 md:px-48 md:leading-relaxed"
-							in:fade={{ duration: 2000, delay: 7000 }}
-						>
-							Request the honour of your presence at <br /> the marriage of their children
 						</div>
 
 						<div class="flex items-start justify-center flex-grow">
