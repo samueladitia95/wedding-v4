@@ -62,7 +62,7 @@
 				</div>
 			{/if}
 
-			<div class="p-6 text-center flex flex-col gap-6 items-center justify-center">
+			<!-- <div class="p-6 text-center flex flex-col gap-6 items-center justify-center">
 				{#if isShow}
 					<div class="font-jakarta text-base md:text-xl" in:fade={{ duration: 1000, delay: 500 }}>
 						AT THE WESTIN HOTEL, JAKARTA
@@ -85,7 +85,7 @@
 						</button></a
 					>
 				{/if}
-			</div>
+			</div> -->
 
 			<div class="grid grid-cols-1 gap-20 md:gap-16 items-center lg:items-bottom">
 				{#each details as detail, index}
