@@ -8,18 +8,18 @@
 	const details = [
 		{
 			logo: logos[0],
-			event: "Holy Matrimony",
-			time: "10:00 AM",
+			event: "HOLY MATRIMONY",
+			time: "11:00 AM - 12:00 PM",
 			notes: "",
-			location: "Java Ballroom, The Westin Hotel",
-			tnc: "As much as we adore your little ones, we kindly ask that our celebration remain an <strong>adults-only</strong>. We appreciate your understanding and look forward to celebrating with you!",
+			location: "St Mary`s Cathedral Perth, Australia",
+			tnc: "",
 		},
-		// {
-		// 	logo: logos[1],
-		// 	event: "LUNCH RECEPTION",
-		// 	time: "12:00 PM",
-		// 	location: "Java Ballroom, The Westin Hotel",
-		// },
+		{
+			logo: logos[1],
+			event: "RECEPTION - COCKTAIL STAND UP PARTY",
+			time: "16:00 PM - 20.00 PM",
+			location: "Ritz Carlton Perth, Australia (Rooftop - Songbird)",
+		},
 		// {
 		// 	logo: logos[2],
 		// 	event: "Tea pai",

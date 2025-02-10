@@ -125,7 +125,7 @@
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
 								in:fade={{ duration: 2250, delay: 3000 }}
 							>
-								<div>Mr. Tanuwangsa & Mrs. Jenny Ho</div>
+								<div>Mr. Robertus Wiryanto Ryanata & Mrs. Yennyta Sari</div>
 							</div>
 							<div
 								class="font-jakarta text-xs lg:!text-base font-light uppercase"
@@ -137,7 +137,7 @@
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
 								in:fade={{ duration: 2250, delay: 5000 }}
 							>
-								<div>Mr. Lie Tjoei Beng & Mrs. Meliana Budiarta</div>
+								<div>Mr. Johan Leopold Godfried Delannoy & Mrs. Siti Sulistiyowati Delannoy</div>
 							</div>
 							<div
 								class="font-arizona
@@ -159,9 +159,9 @@
 							"
 							in:fade={{ duration: 4250, delay: 7000 }}
 						>
-							<div>REYNALDO SAPUTRA</div>
+							<div>ALEXANDER RENALDO RYANATA B.SC. M.PREDANYLT</div>
 							<div class="font-ivora text-5xl md:!text-6xl">&</div>
-							<div>CYNTHIA LIE</div>
+							<div>BELIN DELANNOY B.A M.A</div>
 						</div>
 
 						<div class="flex items-start justify-center flex-grow">
@@ -199,14 +199,15 @@
 					class="font-safira font-light
 					text-base md:!text-2xl/relaxed lg:!text-3xl/relaxed xl:!text-2xl/relaxed
 					leading-relaxed
-					px-16 md:px-48 tracking-widest"
+					px-16 md:px-48 tracking-widest uppercase"
 				>
-					I HAVE FOUND THE ONE <br /> WHOM MY SOUL LOVES
+					In all the world, there is no heart for me like yours. In all the world, there is no love
+					for you like mine.
 				</div>
 				<div
 					class="font-rome italic text-xs md:!text-base lg:!text-2xl xl:!text-base tracking-wide"
 				>
-					Song of Solomon 3:4
+					Maya Angelou
 				</div>
 			</div>
 		</div>
