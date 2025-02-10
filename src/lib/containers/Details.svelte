@@ -10,9 +10,9 @@
 			logo: logos[0],
 			event: "HOLY MATRIMONY",
 			time: "11:00 AM - 12:00 PM",
-			notes: "",
+			notes: "-",
 			location: "St Mary`s Cathedral Perth, Australia",
-			tnc: "",
+			tnc: "-",
 		},
 		{
 			logo: logos[1],
