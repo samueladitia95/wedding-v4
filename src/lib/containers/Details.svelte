@@ -10,15 +10,17 @@
 			logo: logos[0],
 			event: "HOLY MATRIMONY",
 			time: "11:00 AM - 12:00 PM",
-			notes: "-",
+			notes: "",
 			location: "St Mary`s Cathedral Perth, Australia",
-			tnc: "-",
+			tnc: "",
+			link: "https://maps.app.goo.gl/QyNbRGKYXbFD33wU9",
 		},
 		{
 			logo: logos[1],
 			event: "RECEPTION - COCKTAIL STAND UP PARTY",
 			time: "16:00 PM - 20.00 PM",
 			location: "Ritz Carlton Perth, Australia (Rooftop - Songbird)",
+			link: "https://maps.app.goo.gl/F7DxE2fo4CuD9QGm8",
 		},
 		// {
 		// 	logo: logos[2],
@@ -109,6 +111,14 @@
 									<p>{@html detail.tnc}</p>
 								</div>
 							{/if}
+							<a href={detail.link} target="_blank">
+								<button
+									class="px-6 py-2.5 bg-bg-primary rounded-full font-jakarta text-white md:text-xl hover:opacity-80"
+									transition:fly={{ x: -200, duration: 1000, delay: 1000 }}
+								>
+									Get Direction
+								</button></a
+							>
 						</div>
 					{/if}
 				{/each}

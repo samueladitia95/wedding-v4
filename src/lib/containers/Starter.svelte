@@ -101,7 +101,7 @@
 				<img
 					src={bgMainMobile}
 					alt="main"
-					class="absolute w-full h-screen object-cover md:hidden"
+					class="absolute w-full min-h-screen object-cover md:hidden"
 					in:fade={{ duration: 1000, delay: 1000 }}
 				/>
 				<img

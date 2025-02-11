@@ -8,6 +8,7 @@
 	import Starter from "$lib/containers/Starter.svelte";
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
 	import TheAttire from "$lib/containers/TheAttire.svelte";
+	import QnA from "$lib/containers/QnA.svelte";
 	import Gallery from "$lib/containers/Gallery.svelte";
 	import RSVP from "$lib/containers/RSVP.svelte";
 	import Wishes from "$lib/containers/Wishes.svelte";
@@ -71,7 +72,8 @@
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<Details logos={detailLogos} />
-	<TheAttire />
+	<!-- <TheAttire /> -->
+	<QnA {data} />
 	<Gallery {galleryImages} />
 	<div class="lg:grid lg:grid-cols-2">
 		<RSVP {data} />
