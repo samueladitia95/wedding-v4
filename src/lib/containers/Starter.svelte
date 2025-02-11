@@ -151,8 +151,8 @@
 						</div>
 
 						<div
-							class="font-safira text-4xl/relaxed
-							md:!text-5xl/relaxed
+							class="font-safira text-4xl
+							md:!text-5xl
 							tracking-widest
 							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center
 							pt-10 lg:pt-28 xl:pt-12
@@ -160,13 +160,14 @@
 							in:fade={{ duration: 4250, delay: 7000 }}
 						>
 							<div>
-								<p>ALEXANDER RENALDO RYANATA</p>
-								<p class="text-3xl">B.SC. M.PREDANYLT</p>
+								<p class="text-3xl md:!text-5xl">ALEXANDER</p>
+								<p class="text-3xl md:!text-5xl whitespace-nowrap">RENALDO RYANATA</p>
+								<p class="text-2xl md:!text-3xl">B.SC. M.PREDANYLT</p>
 							</div>
-							<div class="font-ivora text-5xl md:!text-6xl">&</div>
+							<div class="font-ivora text-4xl md:!text-6xl">&</div>
 							<div>
-								<p>BELIN DELANNOY</p>
-								<p class="text-3xl">B.A M.A</p>
+								<p class="text-3xl md:!text-5xl">BELIN DELANNOY</p>
+								<p class="text-2xl md:!text-3xl">B.A M.A</p>
 							</div>
 						</div>
 
