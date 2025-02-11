@@ -159,9 +159,15 @@
 							"
 							in:fade={{ duration: 4250, delay: 7000 }}
 						>
-							<div>ALEXANDER RENALDO RYANATA B.SC. M.PREDANYLT</div>
+							<div>
+								<p>ALEXANDER RENALDO RYANATA</p>
+								<p class="text-3xl">B.SC. M.PREDANYLT</p>
+							</div>
 							<div class="font-ivora text-5xl md:!text-6xl">&</div>
-							<div>BELIN DELANNOY B.A M.A</div>
+							<div>
+								<p>BELIN DELANNOY</p>
+								<p class="text-3xl">B.A M.A</p>
+							</div>
 						</div>
 
 						<div class="flex items-start justify-center flex-grow">
@@ -216,7 +222,7 @@
 
 {#if isShowScrollDown && !isShow}
 	<div class="z-[1000]" in:fade={{ duration: 2000 }}>
-		<div class="fixed left-8 bottom-4 z-[1000]">
+		<div class="fixed left-8 bottom-4 z-[1000] hidden">
 			<button
 				class="cursor-pointer z-[1000]"
 				on:click={togglePlay}
