@@ -8,36 +8,34 @@
 
 	const questions = [
 		{
-			question: "WHAT SHOULD I WEAR?",
+			question: "WHAT COLORS ARE GUESTS ALLOWED TO WEAR?",
 			answer:
-				"We kindly request that you dress in formal wear for our wedding.  A floor-length gown, sophisticated cocktail dress for ladies.  Men are kindly requested to suit up and leave their t-shirts, jeans, and slippers at home.",
-			conditional: "*Please refrain from wearing white, that’s reserved for the bride.",
-			conditional2:
-				"If you have any questions about the dress code, please don’t hesitate to contact us. ",
+				"We kindly ask guests to avoid wearing white, cream, or any shades close to white, as these are reserved for the bride. We encourage you to choose attire in soft, colorful palettes to complement the joyous occasion.",
+			conditional: "",
+			conditional2: "",
 		},
 		{
-			question: "CAN I BRING A +1?",
-			answer:
-				"Please note that this invitation is valid for one person, unless you have been informed otherwise personally.",
+			question: "WHAT’S THE DRESS CODE?",
+			answer: "Semi-Formal Attire.",
+			conditional: "Please note that it will be during winter so dress accordingly.",
 		},
 		{
-			question: "WILL THE WEDDING BE INDOOR OR OUTDOOR?",
-			answer: "Events will be held outdoors, except Tea Pai Ceremony.",
+			question: "ARE KIDS ALLOWED?",
+			answer:
+				"While we adore your little ones, this wedding is adults-only celebration. Thank you for understanding!",
 		},
 		{
-			question: "WILL THE DINNER RECEPTION BE SEATED?",
+			question: "ARE PLUS-ONES ALLOWED?",
 			answer:
-				"Yes! Please RSVP to ensure that you will be attending the dinner reception, so that we can arrange the seating accordingly.",
+				"Due to limited space, we kindly ask that only the guests and plus ones specifically listed on the invitation to attend. Thank you for understanding.",
 		},
 		{
-			question: "SHOULD I BRING A GIFT?",
-			answer:
-				"We are thrilled to have you celebrate with us, and while gifts are not necessary, we would be grateful if you choose to honor us with cash or angpao.",
+			question: "WILL THE CEREMONY/RECEPTION BE INDOORS OR OUTDOORS?",
+			answer: "Ceremony and reception will take place indoors and outdoors.",
 		},
 		{
-			question: "I HAVE MORE QUESTIONS! WHO SHOULD I SPEAK TO?",
-			answer:
-				"You may reach out to Marco or Jessica directly. We look forward to celebrating with you.",
+			question: "WHEN SHOULD I RSVP?",
+			answer: "Kindly RSVP no later than 30th June 2025",
 		},
 	];
 
@@ -83,23 +81,23 @@
 				md:text-4xl
 				lg:text-5xl
 				md:text-nowrap
-				pl-4
+				px-6
 				pb-4
 				md:pl-8
 				md:pb-8
 				lg:pl-12
 				lg:pb-12
 				2xl:left-48
-				font-ivora
+				font-safira
 				tracking-widest"
 				in:fade={{ duration: 2000 }}
 			>
-				QUESTIONS & ANSWERS
+				QUESTIONS AND ANSWERS
 			</p>
 		{/if}
 	</div>
 	<div
-		class="flex flex-col gap-14 max-w-[1600px] 2xl:self-center 2xl:w-full px-6 md:px-8 lg:px-16 py-14 font-gordita"
+		class="flex flex-col gap-14 max-w-[1600px] 2xl:self-center 2xl:w-full px-6 md:px-8 lg:px-16 py-14 font-jakarta"
 	>
 		{#each questions as item, index}
 			{#if isShow}

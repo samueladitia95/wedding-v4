@@ -16,7 +16,7 @@
 	<div class="text-xs leading-6 w-full">
 		<div class="flex justify-between">
 			<div class="flex items-start gap-4">
-				<p class="tracking-widest">0{index + 1}.</p>
+				<p class="tracking-widest text-base lg:text-lg">0{index + 1}.</p>
 				<button
 					class="pb-4 text-base hover:cursor-pointer tracking-[0.2em] lg:text-lg text-left"
 					on:click={() => {
@@ -46,7 +46,7 @@
 					{answer}
 				</p>
 				{#if conditional}
-					<p class="py-6 font-timesNewRoman italic text-sm md:text-sm lg:text-base">
+					<p class="py-6 italic text-sm md:text-sm lg:text-base">
 						{conditional}
 					</p>
 				{/if}
