@@ -151,7 +151,7 @@
 						</div>
 
 						<div
-							class="font-safira text-4.5xl/relaxed
+							class="font-safira text-4xl/relaxed
 							md:!text-5xl/relaxed
 							tracking-widest
 							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center

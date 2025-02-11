@@ -18,9 +18,9 @@
 		{
 			logo: logos[1],
 			event: "RECEPTION - COCKTAIL STAND UP PARTY",
-			time: "16:00 PM - 20.00 PM",
-			location: "Ritz Carlton Perth, Australia (Rooftop - Songbird)",
-			link: "https://maps.app.goo.gl/F7DxE2fo4CuD9QGm8",
+			time: "16:30 PM - 20.00 PM",
+			location: "The Hearth, Ritz Carlton Perth, Australia",
+			link: "https://maps.app.goo.gl/WmabR8oKxcD6odMD9",
 		},
 		// {
 		// 	logo: logos[2],
@@ -36,8 +36,6 @@
 		// 	location: "Retreat Lounge, The Westin Hotel",
 		// },
 	];
-
-	const goggleMapLink = "https://maps.app.goo.gl/EuJEAtTHZeSSd3bF7";
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
