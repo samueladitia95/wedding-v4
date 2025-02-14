@@ -21,7 +21,7 @@
 		{ type: "Minute", value: 0 },
 		{ type: "Second", value: 0 },
 	];
-	const eventCalenderLink = "https://calendar.app.google/Y3QJj7te9m9W7u4j9";
+	const eventCalenderLink = "https://calendar.app.google/BbMb4tX7jRphCqRx7";
 
 	onMount(() => {
 		setInterval(function () {

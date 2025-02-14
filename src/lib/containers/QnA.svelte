@@ -37,6 +37,11 @@
 			question: "WHEN SHOULD I RSVP?",
 			answer: "Kindly RSVP no later than 30th June 2025",
 		},
+		{
+			question: "CAN WE TAKE PICTURES DURING THE HOLY MATRIMONY?",
+			answer:
+				"Please be mindful during the ceremony we would love it to be an unplugged ceremony so guests can truly immerse themselves & be present. After the ceremony please feel free to take pictures.",
+		},
 	];
 
 	export let data: PageData;

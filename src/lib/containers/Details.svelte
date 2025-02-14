@@ -13,14 +13,14 @@
 			notes: "",
 			location: "St Mary`s Cathedral Perth, Australia",
 			tnc: "",
-			link: "https://maps.app.goo.gl/QyNbRGKYXbFD33wU9",
+			link: "https://g.co/kgs/4jF7thp",
 		},
 		{
 			logo: logos[1],
 			event: "RECEPTION - COCKTAIL STAND UP PARTY",
 			time: "16:30 PM - 20.00 PM",
 			location: "The Hearth, Ritz Carlton Perth, Australia",
-			link: "https://maps.app.goo.gl/WmabR8oKxcD6odMD9",
+			link: "https://g.co/kgs/yxoYwCf",
 		},
 		// {
 		// 	logo: logos[2],

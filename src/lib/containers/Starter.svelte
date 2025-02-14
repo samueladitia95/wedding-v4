@@ -154,7 +154,7 @@
 							class="font-safira text-4xl
 							md:!text-5xl
 							tracking-widest
-							font-light flex flex-col gap-4 px-10 md:px-40 lg:!items-center
+							font-light flex flex-col gap-4 px-10 md:px-40 items-center
 							pt-10 lg:pt-28 xl:pt-12
 							"
 							in:fade={{ duration: 4250, delay: 7000 }}
