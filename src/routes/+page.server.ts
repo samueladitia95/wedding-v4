@@ -20,7 +20,8 @@ export const actions = {
 			phone: form.data.phone,
 			email: form.data.email,
 			is_attending: form.data.is_attending,
-			plus_one: form.data.plus_one,
+			total_guests: form.data.total_guests,
+			food_allergies: form.data.food_allergies,
 			wishes: form.data.wishes,
 			from: form.data.from,
 		};

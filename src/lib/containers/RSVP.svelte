@@ -8,6 +8,7 @@
 	import { fade } from "svelte/transition";
 	import { invalidateAll } from "$app/navigation";
 	import { toast } from "@zerodevx/svelte-toast";
+	import TextArea from "$lib/components/TextArea.svelte";
 
 	export let data: LayoutData;
 
@@ -52,10 +53,10 @@
 						RSVP <span class="font-ivora">&</span> WISHES
 					</div>
 					<div class="font-jakarta font-light text-sm/normal md:text-base/relaxed md:max-w-xl">
-						Kindly confirm your attendance by completing the form provided below: Before 26<sup
+						Kindly confirm your attendance by completing the form provided below: Before 30<sup
 							>th</sup
 						>
-						October 2024.<br /> <br />
+						June 2025.<br /> <br />
 						Alongside RSVP, Please take a moment to express your warm regards and best wishes.
 					</div>
 				</div>
@@ -72,6 +73,7 @@
 					<Input
 						name="phone"
 						label="Phone Number"
+						secondaryLabel="Fill Your Phone Number"
 						bind:value={$form.phone}
 						{...$constraints.phone}
 						error={$errors.phone}
@@ -80,9 +82,11 @@
 					<Input
 						name="email"
 						label="Email"
+						secondaryLabel="Fill Your Email"
 						bind:value={$form.email}
 						{...$constraints.email}
 						error={$errors.email}
+						isRequired
 					/>
 
 					<div>
@@ -114,17 +118,35 @@
 					</div>
 
 					{#if $form.is_attending === "Yes"}
-						<Input
-							name="plus_one"
-							label="Are you bringing a +1?"
-							secondaryLabel="If so, please let us know who"
-							bind:value={$form.plus_one}
-							{...$constraints.plus_one}
-							error={$errors.plus_one}
+						<div class="flex flex-col w-full h-full">
+							<div class="font-jakarta font-light text-white">
+								How many guests will be attending?
+							</div>
+							<div class="w-full mt-3">
+								<select
+									name="total_guests"
+									class="w-full text-black border-2 border-ring rounded-lg p-2"
+									bind:value={$form.total_guests}
+								>
+									<option value={0} disabled selected>--</option>
+									{#each [1, 2, 3] as guest}
+										<option value={guest}>{guest}</option>
+									{/each}
+								</select>
+							</div>
+						</div>
+
+						<TextArea
+							name="food_allergies"
+							label="Do you have any allergies & food restrictions?"
+							secondaryLabel="Let us know if you have one!"
+							bind:value={$form.food_allergies}
+							{...$constraints.food_allergies}
+							error={$errors.food_allergies}
 						/>
 					{/if}
 
-					<Input
+					<TextArea
 						name="wishes"
 						label="Wishes"
 						secondaryLabel="Write your wishes"
@@ -136,10 +158,11 @@
 					<Input
 						name="from"
 						label="From"
-						secondaryLabel="Enter your name here to send your wishes."
+						secondaryLabel="Wishes from?"
 						bind:value={$form.from}
 						{...$constraints.from}
 						error={$errors.from}
+						isRequired
 					/>
 
 					<button
