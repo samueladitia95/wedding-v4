@@ -167,7 +167,7 @@
 							<div class="font-ivora text-4xl md:!text-6xl">&</div>
 							<div>
 								<p class="text-3xl md:!text-5xl">BELIN DELANNOY</p>
-								<p class="text-2xl md:!text-3xl">B.A. M.A</p>
+								<p class="text-2xl md:!text-3xl">B.A. M.A.</p>
 							</div>
 						</div>
 
