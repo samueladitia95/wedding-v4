@@ -10,7 +10,7 @@
 			logo: logos[0],
 			event: "HOLY MATRIMONY",
 			time: "11:00 AM - 12:00 PM",
-			notes: "",
+			notes: "(Please arrive 30 minutes before)",
 			location: "St Mary`s Cathedral Perth, Australia",
 			tnc: "",
 			link: "https://g.co/kgs/4jF7thp",
@@ -18,7 +18,7 @@
 		{
 			logo: logos[1],
 			event: "RECEPTION - COCKTAIL STAND UP PARTY",
-			time: "16:30 PM - 20.00 PM",
+			time: "16:30 PM - 21.30 PM",
 			location: "The Hearth, Ritz Carlton Perth, Australia",
 			link: "https://g.co/kgs/yxoYwCf",
 		},
@@ -98,11 +98,11 @@
 							<img src={detail.logo} alt="event" class="w-14 max-h-16 md:w-16 md:!max-h-24 mb-4" />
 							<div class="gap-4">
 								<div class="font-jakarta uppercase text-base md:!text-xl">{detail.event}</div>
-								{#if detail.notes}
-									<div class="font-arizona text-xs italic md:!text-xl">{detail.notes}</div>
-								{/if}
 							</div>
 							<div class="font-jakarta uppercase md:!text-xl">{detail.time}</div>
+							{#if detail.notes}
+								<div class="font-arizona text-xs italic md:!text-xl">{detail.notes}</div>
+							{/if}
 							<div class="font-arizona text-sm md:!text-base">{detail.location}</div>
 							{#if detail.tnc}
 								<div class="font-rome text-sm/tight md:text-base lg:text-lg max-w-80 md:max-w-96">

@@ -10,14 +10,14 @@
 		{
 			question: "WHAT COLORS ARE GUESTS ALLOWED TO WEAR?",
 			answer:
-				"We kindly ask guests to avoid wearing white, cream, or any shades close to white, as these are reserved for the bride. We encourage you to choose attire in soft, colorful palettes to complement the joyous occasion.",
+				"Guests are kindly requested to avoid wearing colors that are too close to white, as this color is reserved for the bride and groom. We encourage soft, colorful palettes that reflect the cheerful atmosphere of the occasion. However, dark-colored attire is also completely acceptable.",
 			conditional: "",
 			conditional2: "",
 		},
 		{
 			question: "WHAT’S THE DRESS CODE?",
 			answer: "Semi-Formal Attire.",
-			conditional: "Please note that it will be during winter so dress accordingly.",
+			conditional: "Please note that it will be during summer so dress accordingly.",
 		},
 		{
 			question: "ARE KIDS ALLOWED?",
@@ -31,7 +31,7 @@
 		},
 		{
 			question: "WILL THE CEREMONY/RECEPTION BE INDOORS OR OUTDOORS?",
-			answer: "Ceremony and reception will take place indoors and outdoors.",
+			answer: "Ceremony and reception will take place indoors.",
 		},
 		{
 			question: "WHEN SHOULD I RSVP?",
