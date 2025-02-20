@@ -8,6 +8,7 @@
 	import { fade } from "svelte/transition";
 	import { invalidateAll } from "$app/navigation";
 	import { toast } from "@zerodevx/svelte-toast";
+	import { fly } from "svelte/transition";
 	import TextArea from "$lib/components/TextArea.svelte";
 
 	export let data: LayoutData;
@@ -18,6 +19,7 @@
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
 	};
+
 	const { form, errors, enhance, constraints } = superForm(data.form, {
 		validationMethod: "onblur",
 		validators: zod(schemaRsvpAndWishes),
@@ -135,6 +137,43 @@
 								</select>
 							</div>
 						</div>
+
+						{#if $form.total_guests > 0}
+							<div class="flex flex-col w-full h-full">
+								<div class="font-jakarta font-light text-white">
+									Please provide the name of your guests
+								</div>
+								<div class="w-full mt-3">
+									{#each Array.from({ length: $form.total_guests }) as _, index}
+										<label class="text-sm text-placeholder-text" for={`guest_names[${index}]`}>
+											{`Guest ${index + 1}`}
+											<span class="text-error">*</span>
+										</label>
+										<div class="relative mt-3">
+											<input
+												type="text"
+												placeholder="Fill Your Guest Name"
+												class="h-11 w-full border border-input-border bg-white rounded-md px-4 text-black outline-none transition-all focus:border-placeholder-text disabled:bg-gray-200"
+												required
+												autocomplete="off"
+												name="guest_names"
+												bind:value={$form.guest_names[index]}
+											/>
+
+											{#if $errors.guest_names && $errors.guest_names?.[index]}
+												<div
+													transition:fly={{ y: -20, duration: 300 }}
+													class="text-xs text-error pt-2"
+												>
+													{$errors.guest_names[index]}
+												</div>
+											{/if}
+										</div>
+										<br />
+									{/each}
+								</div>
+							</div>
+						{/if}
 
 						<TextArea
 							name="food_allergies"

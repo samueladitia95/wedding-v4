@@ -24,6 +24,8 @@ export const schemaRsvpAndWishes = z
 			})
 			.default("No"),
 		total_guests: z.number().default(0),
+		guest_names: z.string().array().optional().default([]),
+		plus_one: z.string(),
 		food_allergies: z.string(),
 		wishes: z.string({
 			required_error: "Wishes is Required",
