@@ -11,14 +11,14 @@
 </script>
 
 <div
-	class={`flex flex-row gap-4 ${isLast ? "" : "border-b"} border-b-white/20 ${selected ? "pb-14" : "pb-2"}`}
+	class={`flex flex-col gap-4 ${isLast ? "" : "border-b"} border-b-white/20 ${selected ? "pb-14" : "pb-2"}`}
 >
 	<div class="text-xs leading-6 w-full">
-		<div class="flex justify-between">
-			<div class="flex items-start gap-4">
+		<div class="flex justify-between items-start">
+			<div class="flex items-start gap-4 w-full">
 				<p class="tracking-widest text-base lg:text-lg">0{index + 1}.</p>
 				<button
-					class="pb-4 text-base hover:cursor-pointer tracking-[0.2em] lg:text-lg text-left"
+					class="pb-4 text-base hover:cursor-pointer tracking-[0.2em] lg:text-lg text-left w-full"
 					on:click={() => {
 						selected = !selected;
 					}}
@@ -26,22 +26,18 @@
 					{question}
 				</button>
 			</div>
-			<div class="flex justify-between">
-				<div>
-					<button
-						class="hover:cursor-pointer"
-						on:click={() => {
-							selected = !selected;
-						}}
-					>
-						<div class={`${selected ? "rotate-0" : "rotate-180"}`}>{@html arrowDown}</div>
-					</button>
-				</div>
-			</div>
+			<button
+				class="hover:cursor-pointer"
+				on:click={() => {
+					selected = !selected;
+				}}
+			>
+				<div class={`${selected ? "rotate-0" : "rotate-180"}`}>{@html arrowDown}</div>
+			</button>
 		</div>
 
 		{#if selected}
-			<div class="tracking-wider text-sm md:text-sm lg:text-base pl-10">
+			<div class="tracking-wider text-sm md:text-sm lg:text-base pl-14">
 				<p>
 					{answer}
 				</p>

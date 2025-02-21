@@ -4,7 +4,6 @@
 
 	import type { PageData } from "../../../.svelte-kit/types/src/routes/$types";
 	import QnACard from "$lib/components/QnACard.svelte";
-	import { pb } from "$lib/pocketbase";
 
 	const questions = [
 		{
@@ -17,7 +16,7 @@
 		{
 			question: "WHAT’S THE DRESS CODE?",
 			answer: "Semi-Formal Attire.",
-			conditional: "Please note that it will be during summer so dress accordingly.",
+			conditional: "Please note that it will be during winter so dress accordingly.",
 		},
 		{
 			question: "ARE KIDS ALLOWED?",
@@ -61,21 +60,6 @@
 	on:inview_change={handleChange}
 >
 	<div class="relative min-h-48 min-w-full flex justify-center 2xl:min-w-2 2xl:self-center">
-		<!-- <img
-			class="object-cover md:hidden lg:hidden"
-			src={pb.files.getUrl(data.main, data.main.qna_mobile)}
-			alt="1"
-		/>
-		<img
-			class="object-cover hidden sm:hidden md:block lg:hidden"
-			src={pb.files.getUrl(data.main, data.main.qna_tablet)}
-			alt="2"
-		/>
-		<img
-			class="object-cover hidden lg:block lg:w-full lg:max-h-[570px]"
-			src={pb.files.getUrl(data.main, data.main.qna_desktop)}
-			alt="3"
-		/> -->
 		{#if isShow}
 			<p
 				class="absolute
