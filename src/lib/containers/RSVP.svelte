@@ -12,6 +12,7 @@
 	import TextArea from "$lib/components/TextArea.svelte";
 
 	export let data: LayoutData;
+	export let guestPaxLimit: number;
 
 	let isShow: boolean = false;
 	let isSuccess: boolean = false;
@@ -131,8 +132,8 @@
 									bind:value={$form.total_guests}
 								>
 									<option value={0} disabled selected>--</option>
-									{#each [1, 2, 3] as guest}
-										<option value={guest}>{guest}</option>
+									{#each Array(guestPaxLimit) as _, i}
+										<option value={i + 1}>{i + 1}</option>
 									{/each}
 								</select>
 							</div>

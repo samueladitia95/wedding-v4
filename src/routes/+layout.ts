@@ -14,6 +14,14 @@ export const load: LayoutLoad = async ({ url }) => {
 		sort: "-created",
 	});
 
+	// Access query params from URL
+	const guestID = url.searchParams.get("guest") || "";
+	const guestRule = await pb
+		.collection("guest_rule_wedding_v4")
+		.getFirstListItem(`id="${guestID}"`);
+
+	console.log(guestRule);
+
 	let song: string = "";
 	if (response.song_url) {
 		song = pb.files.getUrl(response, response.song_url);
@@ -21,8 +29,9 @@ export const load: LayoutLoad = async ({ url }) => {
 
 	return {
 		form,
+		guestRule,
 		response,
-		wishes,
 		song,
+		wishes,
 	};
 };

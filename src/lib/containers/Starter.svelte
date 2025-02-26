@@ -14,6 +14,7 @@
 	export let bgSecondaryDesktop: string;
 	export let togglePlay: () => void;
 	export let isPlaying: boolean;
+	export let guestName: string;
 
 	import playButton from "$lib/icons/buttons/Play-enabled.svg";
 	import playButtonHovered from "$lib/icons/buttons/Play-hovered.svg";
@@ -75,6 +76,28 @@
 				out:fade={{ duration: 500, delay: 0 }}
 			>
 				<img src={mainLogo} alt="main logo" class="text-white w-40" />
+			</div>
+
+			<div
+				class="
+					font-jakarta
+					text-center
+					text-white
+					sm:text-base
+					md:text-lg
+					absolute
+					bottom-48
+					md:!bottom-56
+					transform
+					-translate-x-1/2
+					left-1/2"
+				in:fade={{ duration: 1000, delay: 1000 }}
+			>
+				<span class="text-sm md:text-base"> Dear </span>,
+				<br />{guestName}
+				<br /><span class="text-sm md:text-base whitespace-nowrap"
+					>We kindly invite you to our wedding</span
+				>
 			</div>
 		</div>
 	{/if}

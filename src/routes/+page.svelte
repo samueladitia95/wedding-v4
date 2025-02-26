@@ -7,7 +7,6 @@
 
 	import Starter from "$lib/containers/Starter.svelte";
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
-	import TheAttire from "$lib/containers/TheAttire.svelte";
 	import QnA from "$lib/containers/QnA.svelte";
 	import Gallery from "$lib/containers/Gallery.svelte";
 	import RSVP from "$lib/containers/RSVP.svelte";
@@ -53,6 +52,9 @@
 			}
 		}
 	}
+
+	let guestName: string = data.guestRule.invitation_receipient_name || "Guest";
+	let guestPaxLimit: number = data.guestRule.pax_prepared || 2;
 </script>
 
 <div>
@@ -67,16 +69,16 @@
 		introTablet={pb.files.getUrl(data.response, data.response.intro_image_tablet)}
 		introDesktop={pb.files.getUrl(data.response, data.response.intro_image_desktop)}
 		mainLogo={pb.files.getUrl(data.response, data.response.main_logo)}
+		{guestName}
 		{togglePlay}
 		bind:isPlaying
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<Details logos={detailLogos} />
-	<!-- <TheAttire /> -->
 	<QnA {data} />
 	<Gallery {galleryImages} />
 	<div class="lg:grid lg:grid-cols-2">
-		<RSVP {data} />
+		<RSVP {data} {guestPaxLimit} />
 		<Wishes {data} />
 	</div>
 
