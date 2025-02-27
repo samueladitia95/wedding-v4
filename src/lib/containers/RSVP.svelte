@@ -120,7 +120,7 @@
 						</div>
 					</div>
 
-					{#if $form.is_attending === "Yes"}
+					{#if $form.is_attending === "Yes" && guestPaxLimit > 1}
 						<div class="flex flex-col w-full h-full">
 							<div class="font-jakarta font-light text-white">
 								How many guests will be attending?
@@ -132,14 +132,14 @@
 									bind:value={$form.total_guests}
 								>
 									<option value={0} disabled selected>--</option>
-									{#each Array(guestPaxLimit) as _, i}
+									{#each Array(guestPaxLimit - 1) as _, i}
 										<option value={i + 1}>{i + 1}</option>
 									{/each}
 								</select>
 							</div>
 						</div>
 
-						{#if $form.total_guests > 0}
+						{#if $form.total_guests > 1}
 							<div class="flex flex-col w-full h-full">
 								<div class="font-jakarta font-light text-white">
 									Please provide the name of your guests

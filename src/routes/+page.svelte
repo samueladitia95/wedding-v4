@@ -53,8 +53,8 @@
 		}
 	}
 
-	let guestName: string = data.guestRule.invitation_receipient_name || "Guest";
-	let guestPaxLimit: number = data.guestRule.pax_prepared || 2;
+	let guestName: string = (data.guestRule && data.guestRule.invitation_receipient_name) || "Guest";
+	let guestPaxLimit: number = (data.guestRule && data.guestRule.pax_prepared) || 2;
 </script>
 
 <div>

@@ -16,11 +16,13 @@ export const load: LayoutLoad = async ({ url }) => {
 
 	// Access query params from URL
 	const guestID = url.searchParams.get("guest") || "";
-	const guestRule = await pb
-		.collection("guest_rule_wedding_v4")
-		.getFirstListItem(`id="${guestID}"`);
-
-	console.log(guestRule);
+	let guestRule = null;
+	try {
+		guestRule =
+			(await pb.collection("guest_rule_wedding_v4").getFirstListItem(`id="${guestID}"`)) || null;
+	} catch {
+		guestRule = null;
+	}
 
 	let song: string = "";
 	if (response.song_url) {

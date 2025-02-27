@@ -80,24 +80,24 @@
 
 			<div
 				class="
-					font-jakarta
+					font-arizona
 					text-center
 					text-white
-					sm:text-base
-					md:text-lg
+					sm:text-sm
+					md:text-base
+					lg:text-2xl
+					xl:text-lg
 					absolute
 					bottom-48
 					md:!bottom-56
 					transform
 					-translate-x-1/2
 					left-1/2"
-				in:fade={{ duration: 1000, delay: 1000 }}
+				in:fade={{ duration: 3000, delay: 1500 }}
 			>
-				<span class="text-sm md:text-base"> Dear </span>,
+				<span> Dear </span>,
 				<br />{guestName}
-				<br /><span class="text-sm md:text-base whitespace-nowrap"
-					>We kindly invite you to our wedding</span
-				>
+				<br /><span class="whitespace-nowrap">We kindly invite you to our wedding</span>
 			</div>
 		</div>
 	{/if}
