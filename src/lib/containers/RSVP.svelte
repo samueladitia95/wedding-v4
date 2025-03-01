@@ -123,7 +123,7 @@
 					{#if $form.is_attending === "Yes" && guestPaxLimit > 1}
 						<div class="flex flex-col w-full h-full">
 							<div class="font-jakarta font-light text-white">
-								How many guests will be attending?
+								How many guests will be joining you?
 							</div>
 							<div class="w-full mt-3">
 								<select
