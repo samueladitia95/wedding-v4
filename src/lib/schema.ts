@@ -10,7 +10,7 @@ export const schemaRsvpAndWishes = z
 			.string({
 				required_error: "Phone Number is Required",
 			})
-			.regex(/(^08)(\d{3,4}-?){2}\d{2,3}$/, "Phone Number is Invalid"),
+			.regex(/^\+?\d{1,3}[-\s]?\(?\d{1,4}\)?([-\s]?\d{2,4}){2,3}$/, "Phone Number is Invalid"),
 		email: z
 			.string({
 				required_error: "Email is Required",
