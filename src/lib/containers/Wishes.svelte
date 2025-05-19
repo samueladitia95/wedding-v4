@@ -9,7 +9,7 @@
 	export let data: LayoutData;
 
 	let isShow: boolean = false;
-	let n: string = $page.url.searchParams.get("n") || ""; // query search
+	// let n: string = $page.url.searchParams.get("n") || ""; // query search
 
 	// it means when the data change, it will reactive to the ui
 	$: wishes = data.wishes?.items;
@@ -20,16 +20,13 @@
 
 	// ? Methods
 	const handleLoadMore = async () => {
-		let newPage = 2;
-		if (n && +n) {
-			newPage++;
-		}
-		n = String(newPage);
-		const query = {
-			n: String(newPage),
-		};
+		const currentParams = new URLSearchParams(window.location.search);
+		const currentN = Number(currentParams.get("n")) || 1;
+		const newPage = currentN + 1;
 
-		await goto(`?${new URLSearchParams(query).toString()}`, {
+		currentParams.set("n", String(newPage));
+
+		await goto(`?${currentParams.toString()}`, {
 			keepFocus: true,
 			noScroll: true,
 		});
