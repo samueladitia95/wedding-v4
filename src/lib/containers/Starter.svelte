@@ -139,7 +139,7 @@
 					class="absolute w-full h-[120vh] object-cover hidden lg:!block"
 					in:fade={{ duration: 1000, delay: 1000 }}
 				/>
-				<div class="container text-white h-[120vh] relative z-10">
+				<div class="container text-white h-[100vh] relative z-10">
 					<div
 						class="text-center pt-28 md:!pt-40 lg:!pt-28 pb-10 lg:pb-0 flex flex-col gap-10 h-full"
 					>
@@ -187,9 +187,9 @@
 							<div>ANASTASYA RENATA ASMARANI PUTRI</div>
 						</div>
 
-						<!-- <div class="flex items-start justify-center flex-grow">
+						<div class="flex items-start justify-center flex-grow">
 							<div class="border-l border-solid w-0 h-full line xl:!hidden" />
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
