@@ -13,6 +13,7 @@
 			notes: "",
 			location: "",
 			tnc: "Can't wait to see you at our wedding! Please join us for a night of celebration, love, and joy as we embark on this beautiful journey together.",
+			link: "https://g.co/kgs/9hNaS78",
 		},
 		// {
 		// 	logo: logos[2],
@@ -28,8 +29,6 @@
 		// 	location: "Retreat Lounge, The Westin Hotel",
 		// },
 	];
-
-	const goggleMapLink = "https://g.co/kgs/9hNaS78";
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
