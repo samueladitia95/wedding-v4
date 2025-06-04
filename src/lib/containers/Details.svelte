@@ -11,7 +11,8 @@
 			event: "Reception",
 			time: "18:30 - 20:30 PM",
 			notes: "",
-			location: "",
+			location:
+				"GKM Green Tower, 21th floor - Jl. TB Simatupang No.Kav. 89G, RT.10/RW.2, Kebagusan, Ps. Minggu, Jakarta Selatan, DKI Jakarta 12520",
 			tnc: "Can't wait to see you at our wedding! Please join us for a night of celebration, love, and joy as we embark on this beautiful journey together.",
 			link: "https://g.co/kgs/9hNaS78",
 		},

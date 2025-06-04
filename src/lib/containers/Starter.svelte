@@ -174,8 +174,8 @@
 						</div>
 
 						<div
-							class="font-safira text-4xl
-							md:!text-5xl
+							class="font-safira text-xl
+							md:!text-2xl
 							tracking-widest
 							font-light flex flex-col gap-4 px-10 md:px-40 items-center
 							pt-10 lg:pt-28 xl:pt-12
@@ -183,7 +183,7 @@
 							in:fade={{ duration: 4250, delay: 7000 }}
 						>
 							<div>LAKSMANA WIRANGGA</div>
-							<div class="font-ivora text-5xl md:!text-6xl">&</div>
+							<div class="font-ivora text-2xl md:!text-3xl">&</div>
 							<div>ANASTASYA RENATA ASMARANI PUTRI</div>
 						</div>
 
@@ -199,7 +199,7 @@
 	<!-- Secondary Screen -->
 	<!-- Secondary bg image -->
 	{#if isShowScrollDown && !isShow}
-		<div class="h-screen" in:fade={{ duration: 1500, delay: 500 }}>
+		<div class="h-screen relative" in:fade={{ duration: 1500, delay: 500 }}>
 			<img
 				src={bgSecondaryMobile}
 				alt="secondary"
@@ -216,7 +216,7 @@
 				class="absolute w-full h-screen object-cover object-top hidden lg:!block"
 			/>
 			<div
-				class="container text-white text-center pt-10 md:pt-36 flex flex-col gap-6 relative z-10"
+				class="container absolute inset-x-0 bottom-0 text-white text-center pb-48 xl:pb-24 flex flex-col gap-6 z-10"
 			>
 				<div
 					class="font-safira font-light
