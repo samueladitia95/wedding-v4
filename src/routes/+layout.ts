@@ -6,10 +6,10 @@ import { schemaRsvpAndWishes } from "$lib/schema";
 
 export const load: LayoutLoad = async ({ url }) => {
 	const form = await superValidate(zod(schemaRsvpAndWishes));
-	const response = await pb.collection("wedding_v4").getFirstListItem('project="aldobelin"');
+	const response = await pb.collection("wedding_v4").getFirstListItem('project="laksmanarenata"');
 	const page = url.searchParams.get("n") || 1;
 	const wishes = await pb.collection("rsvp_wedding_v4").getList(1, 5 * +page, {
-		filter: 'project = "aldobelin"',
+		filter: 'project = "laksmanarenata"',
 		fields: "wishes,from,created",
 		sort: "-created",
 	});

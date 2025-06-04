@@ -56,7 +56,7 @@
 						RSVP <span class="font-ivora">&</span> WISHES
 					</div>
 					<div class="font-jakarta font-light text-sm/normal md:text-base/relaxed md:max-w-xl">
-						Kindly confirm your attendance by completing the form provided below: Before 30<sup
+						Kindly confirm your attendance by completing the form provided below: Before 27<sup
 							>th</sup
 						>
 						June 2025.<br /> <br />

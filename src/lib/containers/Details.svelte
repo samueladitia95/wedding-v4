@@ -8,19 +8,11 @@
 	const details = [
 		{
 			logo: logos[0],
-			event: "HOLY MATRIMONY",
-			time: "11:00 AM - 12:00 PM",
-			notes: "(Please arrive 30 minutes before)",
-			location: "St Mary`s Cathedral Perth, Australia",
-			tnc: "",
-			link: "https://g.co/kgs/4jF7thp",
-		},
-		{
-			logo: logos[1],
-			event: "RECEPTION - COCKTAIL STAND UP PARTY",
-			time: "16:30 PM - 21.30 PM",
-			location: "The Hearth, Ritz Carlton Perth, Australia",
-			link: "https://g.co/kgs/yxoYwCf",
+			event: "Reception",
+			time: "18:30 - 20:30 PM",
+			notes: "",
+			location: "",
+			tnc: "Can't wait to see you at our wedding! Please join us for a night of celebration, love, and joy as we embark on this beautiful journey together.",
 		},
 		// {
 		// 	logo: logos[2],
@@ -36,6 +28,8 @@
 		// 	location: "Retreat Lounge, The Westin Hotel",
 		// },
 	];
+
+	const goggleMapLink = "https://g.co/kgs/9hNaS78";
 
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>): void => {
 		if (!isShow && detail.inView) isShow = true;
@@ -65,14 +59,14 @@
 			<!-- <div class="p-6 text-center flex flex-col gap-6 items-center justify-center">
 				{#if isShow}
 					<div class="font-jakarta text-base md:text-xl" in:fade={{ duration: 1000, delay: 500 }}>
-						AT THE WESTIN HOTEL, JAKARTA
+						AT GKM Green Tower, 21th floor
 					</div>
 					<div
 						class="font-arizona text-sm md:text-base italic md:leading-loose md:tracking-wide"
 						in:fade={{ duration: 1000, delay: 500 }}
 					>
-						Jl. H.R. Rasuna Said No. Kav. C-22A, Karet Kuningan, Kec. Setiabudi, <br /> <br /> Kota Jakarta
-						Selatan, Jakarta, 12940
+						Jl. TB Simatupang No.Kav. 89G, RT.10/RW.2, Kebagusan, Ps. Minggu, <br /> <br /> Jakarta Selatan,
+						DKI Jakarta 12520
 					</div>
 				{/if}
 				{#if isShow}

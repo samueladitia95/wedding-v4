@@ -75,7 +75,8 @@
 	/>
 	<SaveTheDate weddingDay={dayjs(data.response.wedding_date)} {carauselImages} />
 	<Details logos={detailLogos} />
-	<QnA {data} />
+	<!-- <QnA {data} /> -->
+	<!-- <TheAttire /> -->
 	<Gallery {galleryImages} />
 	<div class="lg:grid lg:grid-cols-2">
 		<RSVP {data} {guestPaxLimit} />

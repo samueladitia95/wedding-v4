@@ -148,7 +148,7 @@
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
 								in:fade={{ duration: 2250, delay: 3000 }}
 							>
-								<div>Mr. Robertus Wiryanto Ryanata & Mrs. Yennyta Sari</div>
+								<div>Mr. Purwanto Pudjo Mulyadi (Alm) & Mrs. Tating Herawati</div>
 							</div>
 							<div
 								class="font-jakarta text-xs lg:!text-base font-light uppercase"
@@ -160,7 +160,7 @@
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
 								in:fade={{ duration: 2250, delay: 5000 }}
 							>
-								<div>Mr. Johan Leopold Godfried Delannoy & Mrs. Siti Sulistiyowati Delannoy</div>
+								<div>Mr. Michael Boy Ramond (Alm) & Mrs. Veronica Uun Megawati</div>
 							</div>
 							<div
 								class="font-arizona
@@ -182,21 +182,14 @@
 							"
 							in:fade={{ duration: 4250, delay: 7000 }}
 						>
-							<div>
-								<p class="text-3xl md:!text-5xl">ALEXANDER</p>
-								<p class="text-3xl md:!text-5xl whitespace-nowrap">RENALDO RYANATA</p>
-								<p class="text-2xl md:!text-3xl">B.SC. M.PREDANYLT</p>
-							</div>
-							<div class="font-ivora text-4xl md:!text-6xl">&</div>
-							<div>
-								<p class="text-3xl md:!text-5xl">BELIN DELANNOY</p>
-								<p class="text-2xl md:!text-3xl">B.A. M.A.</p>
-							</div>
+							<div>LAKSMANA WIRANGGA</div>
+							<div class="font-ivora text-5xl md:!text-6xl">&</div>
+							<div>ANASTASYA RENATA ASMARANI PUTRI</div>
 						</div>
 
-						<div class="flex items-start justify-center flex-grow">
+						<!-- <div class="flex items-start justify-center flex-grow">
 							<div class="border-l border-solid w-0 h-full line xl:!hidden" />
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -231,13 +224,13 @@
 					leading-relaxed
 					px-16 md:px-48 tracking-widest uppercase"
 				>
-					In all the world, there is no heart for me like yours. In all the world, there is no love
-					for you like mine.
+					AND IF YOU WERE TO ASK ME <br /> AFTER ALL THAT WE'VE BEEN THROUGH <br />
+					STILL BELIEVE IN MAGIC? <br /> YES I DO
 				</div>
 				<div
 					class="font-rome italic text-xs md:!text-base lg:!text-2xl xl:!text-base tracking-wide"
 				>
-					Maya Angelou
+					Magic - Coldplay
 				</div>
 			</div>
 		</div>
