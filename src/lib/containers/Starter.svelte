@@ -71,11 +71,11 @@
 				/>
 			</div>
 			<div
-				class="absolute w-full z-10 top-1/4 lg:top-1/2 lg:transform lg:-translate-y-1/2 flex justify-center"
+				class="absolute w-full z-10 top-1/2 lg:transform lg:-translate-y-1/2 flex justify-center"
 				in:fade={{ duration: 1500, delay: 1500 }}
 				out:fade={{ duration: 500, delay: 0 }}
 			>
-				<img src={mainLogo} alt="main logo" class="text-white w-40" />
+				<img src={mainLogo} alt="main logo" class="text-white w-16" />
 			</div>
 
 			<div

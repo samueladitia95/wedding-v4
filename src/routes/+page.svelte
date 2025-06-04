@@ -7,11 +7,12 @@
 
 	import Starter from "$lib/containers/Starter.svelte";
 	import SaveTheDate from "$lib/containers/SaveTheDate.svelte";
-	import QnA from "$lib/containers/QnA.svelte";
+	// import QnA from "$lib/containers/QnA.svelte";
 	import Gallery from "$lib/containers/Gallery.svelte";
 	import RSVP from "$lib/containers/RSVP.svelte";
 	import Wishes from "$lib/containers/Wishes.svelte";
 	import Details from "$lib/containers/Details.svelte";
+	import WeddingGift from "$lib/containers/WeddingGift.svelte";
 
 	export let data: LayoutData;
 
@@ -82,7 +83,7 @@
 		<RSVP {data} {guestPaxLimit} />
 		<Wishes {data} />
 	</div>
-
+	<WeddingGift />
 	<div class="p-4 bg-bg-primary text-white font-jakarta text-sm text-center">
 		Website Invitation by Another Chapter
 	</div>
