@@ -67,7 +67,7 @@
 				<img
 					src={introDesktop}
 					alt="intro desktop"
-					class="absolute w-full h-screen object-cover hidden lg:!block"
+					class="absolute w-full h-screen object-cover object-[center_35%] hidden lg:!block"
 				/>
 			</div>
 			<div
