@@ -82,7 +82,7 @@
 				class="
 					font-arizona
 					text-center
-					text-white
+					text-gray-50
 					sm:text-sm
 					md:text-base
 					lg:text-2xl
