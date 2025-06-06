@@ -3,6 +3,7 @@ import { superValidate } from "sveltekit-superforms/server";
 import type { LayoutLoad } from "./$types";
 import { zod } from "sveltekit-superforms/adapters";
 import { schemaRsvpAndWishes } from "$lib/schema";
+import { PUBLIC_IS_GUEST_FROM_URL } from "$env/static/public";
 
 export const load: LayoutLoad = async ({ url }) => {
 	const form = await superValidate(zod(schemaRsvpAndWishes));
@@ -15,13 +16,21 @@ export const load: LayoutLoad = async ({ url }) => {
 	});
 
 	// Access query params from URL
+	const isGuestFromUrl: boolean = Boolean(PUBLIC_IS_GUEST_FROM_URL);
 	const guestID = url.searchParams.get("guest") || "";
 	let guestRule = null;
-	try {
-		guestRule =
-			(await pb.collection("guest_rule_wedding_v4").getFirstListItem(`id="${guestID}"`)) || null;
-	} catch {
-		guestRule = null;
+	if (!isGuestFromUrl || !guestID) {
+		try {
+			guestRule =
+				(await pb.collection("guest_rule_wedding_v4").getFirstListItem(`id="${guestID}"`)) || null;
+		} catch {
+			guestRule = null;
+		}
+	} else {
+		guestRule = {
+			invitation_receipient_name: url.searchParams.get("guest") || "",
+			pax_prepared: 2,
+		};
 	}
 
 	let song: string = "";
