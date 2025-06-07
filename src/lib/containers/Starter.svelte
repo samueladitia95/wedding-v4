@@ -93,7 +93,8 @@
 					md:!bottom-56
 					transform
 					-translate-x-1/2
-					left-1/2"
+					left-1/2
+					pb-8"
 				in:fade={{ duration: 3000, delay: 1500 }}
 			>
 				<span> Dear </span>,
@@ -105,7 +106,7 @@
 
 	{#if isShow && !isShowScrollDown}
 		<div
-			class="relative w-full z-10 bottom-40 flex justify-center"
+			class="absolute w-full z-10 bottom-40 flex justify-center"
 			transition:fly={{ y: 100, duration: 300, delay: 3000 }}
 		>
 			<button
