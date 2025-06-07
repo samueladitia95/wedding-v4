@@ -240,7 +240,7 @@
 
 {#if isShowScrollDown && !isShow}
 	<div class="z-[1000]" in:fade={{ duration: 2000 }}>
-		<div class="fixed left-8 bottom-4 z-[1000] hidden">
+		<div class="fixed left-8 bottom-4 z-[1000]">
 			<button
 				class="cursor-pointer z-[1000]"
 				on:click={togglePlay}
