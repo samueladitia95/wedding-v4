@@ -45,16 +45,6 @@
 					class="font-sans py-4 flex flex-col gap-4"
 					transition:fly={{ x: -200, duration: 1500 }}
 				>
-					<div>MANDIRI</div>
-					<div class="font-sans text-xl lg:text-2xl">90000 1676 0622</div>
-					<div class="font-sans lg:text-2xl">a.n Eri Hutama</div>
-				</div>
-			{/if}
-			{#if isShow}
-				<div
-					class="font-sans py-4 flex flex-col gap-4"
-					transition:fly={{ x: -200, duration: 1500 }}
-				>
 					<div>BCA</div>
 					<div class="font-sans text-xl lg:text-2xl">628 151 9023</div>
 					<div class="font-sans lg:text-2xl">a.n Laras Ayu Oktaviani</div>

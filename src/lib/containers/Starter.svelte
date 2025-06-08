@@ -218,21 +218,22 @@
 				class="absolute w-full h-screen object-cover object-top hidden lg:!block"
 			/>
 			<div
-				class="container absolute inset-x-0 top-1/3 text-white text-center pb-48 xl:pb-24 flex flex-col gap-6 z-10"
+				class="container absolute inset-x-0 -bottom-40 lg:top-1/3 text-white text-center pb-48 xl:pb-24 flex flex-col gap-6 z-10"
 			>
 				<div
 					class="font-safira font-light
-					text-base md:!text-2xl/relaxed lg:!text-3xl/relaxed xl:!text-2xl/relaxed
+					text-sm md:!text-2xl/relaxed lg:!text-3xl/relaxed xl:!text-2xl/relaxed
 					leading-relaxed
 					px-16 md:px-48 tracking-widest uppercase"
 				>
-					I SEE YOU IN EVERY CORNER OF EVER PLACE YOU'VE NEVER BEEN <br /> MY EYES ARE A VESSEL YOUR
-					SOUL LIVES IN YOUR FACE IS LIKE BRAILLE YOUR MIND IS MY SKIN
+					"And of His signs is that He created for you from yourselves mates that you may find
+					tranquillity in them; and He placed between you affection and mercy. Indeed in that are
+					signs for a people who give thought"
 				</div>
 				<div
 					class="font-rome italic text-xs md:!text-base lg:!text-2xl xl:!text-base tracking-wide"
 				>
-					-
+					QS. Ar-Rum:21
 				</div>
 			</div>
 		</div>
