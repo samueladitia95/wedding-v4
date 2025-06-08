@@ -23,7 +23,7 @@ export const actions = {
 		}
 
 		const dataRsvp = {
-			project: "laksmanarenata",
+			project: "erilaras",
 			name: form.data.name,
 			phone: form.data.phone,
 			email: form.data.email,

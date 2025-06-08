@@ -7,10 +7,10 @@ import { PUBLIC_IS_GUEST_FROM_URL } from "$env/static/public";
 
 export const load: LayoutLoad = async ({ url }) => {
 	const form = await superValidate(zod(schemaRsvpAndWishes));
-	const response = await pb.collection("wedding_v4").getFirstListItem('project="laksmanarenata"');
+	const response = await pb.collection("wedding_v4").getFirstListItem('project="erilaras"');
 	const page = url.searchParams.get("n") || 1;
 	const wishes = await pb.collection("rsvp_wedding_v4").getList(1, 5 * +page, {
-		filter: 'project = "laksmanarenata"',
+		filter: 'project = "erilaras"',
 		fields: "wishes,from,created",
 		sort: "-created",
 	});

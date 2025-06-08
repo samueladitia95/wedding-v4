@@ -82,7 +82,7 @@
 				class="
 					font-arizona
 					text-center
-					text-gray-400
+					text-white
 					lg:text-white
 					sm:text-sm
 					md:text-base
@@ -150,7 +150,7 @@
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
 								in:fade={{ duration: 2250, delay: 3000 }}
 							>
-								<div>Mr. Purwanto Pudjo Mulyadi (Alm) & Mrs. Tating Herawati</div>
+								<div>Mr. Sajiya & Mrs. Rita Zahara</div>
 							</div>
 							<div
 								class="font-jakarta text-xs lg:!text-base font-light uppercase"
@@ -162,7 +162,7 @@
 								class="font-arizona text-sm lg:!text-xl xl:!text-base flex flex-col gap-6"
 								in:fade={{ duration: 2250, delay: 5000 }}
 							>
-								<div>Mr. Michael Boy Ramond (Alm) & Mrs. Veronica Uun Megawati</div>
+								<div>Mr. Hadi Sucipto & Mrs. Sulastri</div>
 							</div>
 							<div
 								class="font-arizona
@@ -176,17 +176,17 @@
 						</div>
 
 						<div
-							class="font-safira text-xl
-							md:!text-2xl
+							class="font-safira text-3xl
+							md:!text-4xl
 							tracking-widest
 							font-light flex flex-col gap-4 px-10 md:px-40 items-center
 							pt-10 lg:pt-28 xl:pt-12
 							"
 							in:fade={{ duration: 4250, delay: 7000 }}
 						>
-							<div>LAKSMANA WIRANGGA</div>
+							<div>LARAS AYU OKTAVIANI</div>
 							<div class="font-ivora text-2xl md:!text-3xl">&</div>
-							<div>ANASTASYA RENATA ASMARANI PUTRI</div>
+							<div>ERI HUTAMA</div>
 						</div>
 
 						<div class="flex items-start justify-center flex-grow">
@@ -218,7 +218,7 @@
 				class="absolute w-full h-screen object-cover object-top hidden lg:!block"
 			/>
 			<div
-				class="container absolute inset-x-0 bottom-0 text-white text-center pb-48 xl:pb-24 flex flex-col gap-6 z-10"
+				class="container absolute inset-x-0 top-1/3 text-white text-center pb-48 xl:pb-24 flex flex-col gap-6 z-10"
 			>
 				<div
 					class="font-safira font-light
@@ -226,13 +226,13 @@
 					leading-relaxed
 					px-16 md:px-48 tracking-widest uppercase"
 				>
-					AND IF YOU WERE TO ASK ME <br /> AFTER ALL THAT WE'VE BEEN THROUGH <br />
-					STILL BELIEVE IN MAGIC? <br /> YES I DO
+					I SEE YOU IN EVERY CORNER OF EVER PLACE YOU'VE NEVER BEEN <br /> MY EYES ARE A VESSEL YOUR
+					SOUL LIVES IN YOUR FACE IS LIKE BRAILLE YOUR MIND IS MY SKIN
 				</div>
 				<div
 					class="font-rome italic text-xs md:!text-base lg:!text-2xl xl:!text-base tracking-wide"
 				>
-					Magic - Coldplay
+					-
 				</div>
 			</div>
 		</div>

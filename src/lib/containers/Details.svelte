@@ -8,21 +8,24 @@
 	const details = [
 		{
 			logo: logos[0],
-			event: "Reception",
-			time: "18:30 - 20:30 PM",
+			event: "AKAD",
+			time: "16:00 PM",
 			notes: "",
 			location:
 				"GKM Green Tower, 21th floor - Jl. TB Simatupang No.Kav. 89G, RT.10/RW.2, Kebagusan, Ps. Minggu, Jakarta Selatan, DKI Jakarta 12520",
-			tnc: "Can't wait to see you at our wedding! Please join us for a night of celebration, love, and joy as we embark on this beautiful journey together.",
-			link: "https://g.co/kgs/9hNaS78",
+			tnc: "",
+			link: "https://maps.app.goo.gl/YyGNQPn3fdG8NYRu9",
 		},
-		// {
-		// 	logo: logos[2],
-		// 	event: "Tea pai",
-		// 	notes: "(For family only)",
-		// 	time: "12:00 PM",
-		// 	location: "Java Ballroom, The Westin Hotel",
-		// },
+		{
+			logo: logos[1],
+			event: "RECEPTION",
+			time: "19:00 - 21:00 PM",
+			notes: "",
+			location:
+				"GKM Green Tower, 21th floor - Jl. TB Simatupang No.Kav. 89G, RT.10/RW.2, Kebagusan, Ps. Minggu, Jakarta Selatan, DKI Jakarta 12520",
+			tnc: "",
+			link: "https://maps.app.goo.gl/YyGNQPn3fdG8NYRu9",
+		},
 		// {
 		// 	logo: logos[3],
 		// 	event: "AFTER PARTY",

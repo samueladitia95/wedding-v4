@@ -35,9 +35,9 @@
 					class="font-sans py-4 flex flex-col gap-4"
 					transition:fly={{ x: -200, duration: 1000 }}
 				>
-					<div>BCA</div>
-					<div class="font-sans text-xl lg:text-2xl">2731 921 760</div>
-					<div class="font-sans lg:text-2xl">a.n Laksmana Wirangga</div>
+					<div>BANK DKI</div>
+					<div class="font-sans text-xl lg:text-2xl">113 2311 5040</div>
+					<div class="font-sans lg:text-2xl">a.n Eri Hutama</div>
 				</div>
 			{/if}
 			{#if isShow}
@@ -45,9 +45,19 @@
 					class="font-sans py-4 flex flex-col gap-4"
 					transition:fly={{ x: -200, duration: 1500 }}
 				>
-					<div>DANAMON</div>
-					<div class="font-sans text-xl lg:text-2xl">0036 1571 1201</div>
-					<div class="font-sans lg:text-2xl">a.n Anastasya Renata Asmarani Putri</div>
+					<div>MANDIRI</div>
+					<div class="font-sans text-xl lg:text-2xl">90000 1676 0622</div>
+					<div class="font-sans lg:text-2xl">a.n Eri Hutama</div>
+				</div>
+			{/if}
+			{#if isShow}
+				<div
+					class="font-sans py-4 flex flex-col gap-4"
+					transition:fly={{ x: -200, duration: 1500 }}
+				>
+					<div>BCA</div>
+					<div class="font-sans text-xl lg:text-2xl">628 151 9023</div>
+					<div class="font-sans lg:text-2xl">a.n Laras Ayu Oktaviani</div>
 				</div>
 			{/if}
 		</div>
