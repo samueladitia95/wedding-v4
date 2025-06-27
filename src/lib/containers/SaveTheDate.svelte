@@ -16,10 +16,10 @@
 
 	let isShow: boolean = false;
 	let countdowns = [
-		{ type: "Day(s)", value: 0 },
-		{ type: "Hour(s)", value: 0 },
-		{ type: "Minute(s)", value: 0 },
-		{ type: "Second(s)", value: 0 },
+		{ type: "Day", value: 0 },
+		{ type: "Hour", value: 0 },
+		{ type: "Minute", value: 0 },
+		{ type: "Second", value: 0 },
 	];
 	const eventCalenderLink = "https://calendar.app.google/E9RWFMB2Y5YZyctu6";
 
@@ -29,10 +29,10 @@
 			const duration = dayjs.duration(weddingDay.diff(currentTime));
 
 			countdowns = [
-				{ type: "Day(s)", value: Math.floor(duration.days()) },
-				{ type: "Hour(s)", value: duration.hours() },
-				{ type: "Minute(s)", value: duration.minutes() },
-				{ type: "Second(s)", value: duration.seconds() },
+				{ type: "Day", value: Math.floor(duration.days()) },
+				{ type: "Hour", value: duration.hours() },
+				{ type: "Minute", value: duration.minutes() },
+				{ type: "Second", value: duration.seconds() },
 			];
 		}, 1000);
 	});
